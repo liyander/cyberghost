@@ -33,7 +33,7 @@ const Achieve = () => {
     <Container>
         <h1>Cert    </h1>
     <div className="tryhackme" style={{paddingTop:"30px"}}>
-        <h3>Tryhackme:</h3>
+        <h3 style={{fontFamily:"'Press Start 2P', monospace"}}>Tryhackme:</h3>
      <Row style={{paddingTop:"30px"}}>
      <Col className="d-flex">
      <Card
@@ -208,7 +208,7 @@ const Achieve = () => {
      </Row>
      </div>
      <div className="tcm" style={{paddingTop:"60px",paddingBottom:"40px"}}>
-     <h3>TCM-Security:</h3>
+     <h3 style={{fontFamily:"'Press Start 2P', monospace"}} >TCM-Security:</h3>
      <Row style={{paddingTop:"30px"}}>
      <Col className="d-flex">
      <Card
@@ -639,7 +639,7 @@ const Achieve = () => {
      </Row>
      </div>
      <div className="tryhackme" style={{paddingTop:"30px"}}>
-        <h3>Certification Exams:</h3>
+        <h3 style={{fontFamily:"'Press Start 2P', monospace"}} >Certification Exams:</h3>
      <Row style={{paddingTop:"30px"}}>
      <Col className="d-flex">
      <Card
@@ -686,7 +686,7 @@ const Achieve = () => {
      </Row>
      </div>
      <div className="extra" style={{paddingTop:"50px",paddingBottom:"60px"}}>
-        <h3>Extra Activities:</h3>
+        <h3 style={{fontFamily:"'Press Start 2P', monospace"}} >Extra Activities:</h3>
      <Row style={{paddingTop:"40px"}}>
      <Col className="d-flex">
      <Card

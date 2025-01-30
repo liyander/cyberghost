@@ -3,6 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './home.css';
 
+
 const Sidecontent = () => {
     return ( 
         <>
@@ -12,7 +13,7 @@ const Sidecontent = () => {
           <h5 className='hacker'>
             Hello earth
           </h5>
-          <h1 className='typing' style={{color:"white"}}>whoami</h1>
+          <h1 className='typing' style={{color:"white"}}>whoami </h1>
         </Col>
        
       </Row>
