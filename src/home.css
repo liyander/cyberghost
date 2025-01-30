@@ -91,3 +91,25 @@
     background-repeat: no-repeat;
     
 }
+
+.breaking_bad {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('cert.png'); /* Update with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Keeps it in the background */
+  }
+  
+  .contents{
+    position: relative; /* Ensures content is above the background */
+    z-index: 1;
+    color: white;
+    padding: 50px;
+    min-height: 200vh; /* Makes sure there's enough content to scroll */
+  }
+  

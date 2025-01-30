@@ -26,8 +26,10 @@ import nahom from "./cert/nahom.jpg";
 
 const Achieve = () => {
     return ( 
-    <>
+        <>
     <Defaultnavbar/>
+    <div className="breaking_bad"></div>
+    <div className='contents'>
     <Container>
         <h1>Cert    </h1>
     <div className="tryhackme" style={{paddingTop:"30px"}}>
@@ -160,7 +162,7 @@ const Achieve = () => {
                 </Card>
      </Col>
      </Row>
-     <Row style={{paddingTop:"30px"}}>
+     <Row style={{paddingTop:"40px"}}>
      <Col className="d-flex">
      <Card
                 className="position-relative"
@@ -591,7 +593,7 @@ const Achieve = () => {
                 </Card>
      </Col>
      </Row>
-     <Row>
+     <Row style={{paddingTop:"30px"}} >
      <Col className="d-flex">
      <Card
                 className="position-relative"
@@ -683,9 +685,9 @@ const Achieve = () => {
      </Col>
      </Row>
      </div>
-     <div className="extra" style={{paddingTop:"30px"}}>
+     <div className="extra" style={{paddingTop:"50px",paddingBottom:"60px"}}>
         <h3>Extra Activities:</h3>
-     <Row style={{paddingTop:"30px"}}>
+     <Row style={{paddingTop:"40px"}}>
      <Col className="d-flex">
      <Card
                 className="position-relative"
@@ -815,7 +817,8 @@ const Achieve = () => {
      </Row>
      </div>
     </Container>
-    </> 
+    </div> 
+    </>
     );
 }
  
