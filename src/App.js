@@ -5,6 +5,7 @@ import Home from './home';
 import Project from './projects';
 import Achieve from './achievements';
 import Dresume from './resume';
+import Writeups from './blog';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/projects" element={<Project />} />
         <Route path="/achievements" element={< Achieve/>} />
         <Route path="/resume" element={< Dresume/>} />
+        <Route path="/writeups" element={< Writeups/>} />
       </Routes>
     </Router>
   );

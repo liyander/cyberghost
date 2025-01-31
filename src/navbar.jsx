@@ -16,7 +16,7 @@ const Defaultnavbar = () => {
             <Nav.Link href="/projects" style={{color:"white"}}>Projects</Nav.Link>
             <Nav.Link href="/achievements" style={{color:"white"}}>Breakthroughs 0wned</Nav.Link>
             <Nav.Link href="/resume" style={{color:"white"}}>Resume</Nav.Link>
-            <Nav.Link href="/" style={{color:"white"}}>Get Hacked</Nav.Link>
+            <Nav.Link href="/writeups" style={{color:"white"}}>Writeups</Nav.Link>
           </Nav>
             </Container>
         </Navbar.Collapse>
