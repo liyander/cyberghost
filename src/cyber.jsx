@@ -62,9 +62,10 @@ const KaliTerminal = () => {
         }, 1000); 
       }
     }, 50);
-
+  
     return () => clearInterval(timer);
-  }, [navigate]);
+  }, [bootMessages, messageIndex, navigate]);
+  
 
   const getMessageColor = (message) => {
     if (message.includes('[ ok ]')) return '#00ff00';
