@@ -1,14 +1,13 @@
-// src/KaliTerminal.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const KaliTerminal = () => {
   const [messageIndex, setMessageIndex] = useState(0);
   const [displayedMessages, setDisplayedMessages] = useState([]);
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
-  const bootMessages = [
+  const bootMessages = useMemo(() => [
     '[ 2.194785] sd 0:0:0:0: [sda] Assuming drive cache: write through',
     '[ 2.195284] sd 0:0:0:0: [sda] Assuming drive cache: write through',
     '[ 2.196163] sd 0:0:0:0: [sda] Assuming drive cache: write through',
@@ -48,7 +47,7 @@ const KaliTerminal = () => {
     '[ ok ] Starting ACPI services....',
     '[ ok ] Starting periodic command scheduler: cron',
     '[ ok ] Hacking into goOgle',
-  ];
+  ], []); // Empty dependency array since the messages never change
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -59,13 +58,13 @@ const KaliTerminal = () => {
         clearInterval(timer);
         setTimeout(() => {
           navigate('/home');
-        }, 1000); 
+        }, 1000);
       }
     }, 50);
 
     return () => clearInterval(timer);
-  }, [messageIndex, navigate, bootMessages]); // Now it's safe to include bootMessages
-};
+  }, [messageIndex, navigate, bootMessages]);
+
   const getMessageColor = (message) => {
     if (message.includes('[ ok ]')) return '#00ff00';
     if (message.includes('[info]')) return '#00ffff';
