@@ -4,6 +4,7 @@ import KaliTerminal from './cyber';
 import Home from './home';
 import Project from './projects';
 import Achieve from './achievements';
+import Contacts from './contact';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/achievements" element={< Achieve/>} />
+        <Route path="/con" element={< Contacts/>} />
       </Routes>
     </Router>
   );
