@@ -62,11 +62,10 @@ const KaliTerminal = () => {
         }, 1000); 
       }
     }, 50);
-  
-    return () => clearInterval(timer);
-  }, [bootMessages, messageIndex, navigate]);
-  
 
+    return () => clearInterval(timer);
+  }, [messageIndex, navigate, bootMessages]); // Now it's safe to include bootMessages
+};
   const getMessageColor = (message) => {
     if (message.includes('[ ok ]')) return '#00ff00';
     if (message.includes('[info]')) return '#00ffff';
