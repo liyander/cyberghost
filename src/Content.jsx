@@ -20,7 +20,7 @@ const Sidecontent = () => {
 
       <Row>
         <Col xs={6} md={5}>
-          <p className='para'> is a passionate cybersecurity enthusiast, 
+          <p className='para'>I am a passionate cybersecurity enthusiast, 
             full-stack developer, and OSINT practitioner 
             with a strong foundation in ethical hacking, 
             network security, and web application security. 
