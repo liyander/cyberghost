@@ -6,6 +6,7 @@ import Project from './projects';
 import Achieve from './achievements';
 import Dresume from './resume';
 import Writeups from './blog';
+import ErrorPage from './404';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/achievements" element={< Achieve/>} />
         <Route path="/resume" element={< Dresume/>} />
         <Route path="/writeups" element={< Writeups/>} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
   );
