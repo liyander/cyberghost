@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+body{
+  background-color: #1a1a1a;
+}
 .maincontainer{
     height:730px;
     background-image: url(hack.jpg);
