@@ -7,5 +7,102 @@
     padding-top: 180px;
     padding-left: 50px;
 }
+.page{
+    font-size: 50px;
+    width:50px;
+    padding-left: 210px;
+  }
+  .not{
+    font-size: 50px;
+    width: 50px;
+    padding-left: 240px;
+  }
+  .found{
+    font-size: 50px;
+    width: 50px;
+    padding-left: 190px;
+  }
+  .home{
+    font-size: 20px;
+    padding-left: 190px;
+    padding-top: 40px;
+  }
+  .yes{
+    font-size: 15px;
+    padding-left: 240px;
+    padding-top: 30px;
+  }
+  .no{
+    font-size: 15px;
+    width: 50px;
+    padding-left: 20px;
+    padding-top: 31.8px;
+  }
+  .fournot{
+    width: 700px;
+  }
+  .zero{
+    font-size: 100px;
+  }
+  .backimg{
+    width:800px;
+  }
 
-
+  @media (max-width: 768px) {
+    .back {
+      padding-top: 5px;
+    }
+    
+    .four {
+      padding-top: 40px;
+      padding-left: 0px;
+      text-align: center;
+    }
+  
+    .page, .not, .found {
+      font-size: 20px;
+      width: auto;
+      padding-left: 0;
+      margin: 0 auto;
+    }
+  
+    .home {
+      font-size: 18px;
+      padding-left: 0;
+      padding-top: 20px;
+      text-align: center;
+    }
+  
+    .yes{
+        padding-left: 120px;
+        padding-top: 20px;
+    }
+    .no{
+        padding-left: 0;
+        padding-top: 21px;
+    }
+    .yes, .no {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .fournot {
+      width: 350px;
+      padding-left: 60px;
+    }
+  
+    .zero {
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    .backimg {
+      padding-top: 50px;
+      padding-left: 40px;
+      width: 350px;
+    }
+    .notfound{
+      padding-top: 25px;
+    }
+  }
+  

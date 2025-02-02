@@ -149,4 +149,123 @@ body{
   .mt{
     padding-top: 50px;
   }
+  .new{
+    width: 25rem;
+  }
+
+  
+  
+
+
+  @media (max-width: 768px) {
+    body {
+      background-color: #121212;
+    }
+  
+    .maincontainer {
+      height: auto;
+      background-position: center;
+      background-size: cover;
+      background-image: url(tri.jpg);
+
+    }
+  
+    .body {
+      padding: 10px;
+      padding-top: 15px;
+      padding-left: 20px;
+      text-align: center;
+      backdrop-filter: blur(13px);
+      color: black;
+    }
+  
+    .logo {
+      font-size: 24px;
+      padding-right: 0;
+    }
+  
+    .me-auto {
+      flex-direction: column;
+      font-size: 14px;
+      width: 100%;
+      padding: 0;
+      gap: 15px;
+    }
+  
+    .whoami {
+      padding-top: 60px;
+    }
+  
+    .hacker {
+      font-size: 20px;
+    }
+  
+    .para {
+      font-size: 17px;
+      padding: 10px;
+    }
+    
+
+    .pro {
+      padding: 20px 10px;
+    }
+  
+    .second, .fullpro {
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .row2 {
+      padding: 20px 10px;
+    }
+  
+    .prohead {
+      font-size: 22px;
+      padding-bottom: 15px;
+    }
+  
+    .breaking_bad, .blogfull {
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .contents {
+      padding: 20px;
+      min-height: 150vh;
+    }
+  
+    .resource-card {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .resource-card .left {
+      width: 100%;
+      min-width: auto;
+      margin-bottom: 10px;
+    }
+  
+    .resource-card .right {
+      width: 100%;
+    }
+  
+    .mt {
+      padding-top: 30px;
+    }
+    .last{
+      padding-bottom: 50px;
+    }
+
+    .new{
+      margin-bottom: 27px;
+      width: 22rem;
+    }
+    .d-flex{
+      padding-bottom: 23px;
+    }
+   
+
+
+  }
   

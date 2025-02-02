@@ -32,7 +32,7 @@ const Writeups = () => {
 
       </div>
       </Container>
-      <Container className="mt" >
+      <Container className="mt last" >
       <div className="resource-card d-flex bg-dark text-white p-3 rounded shadow" >
         <div className="left bg-secondary p-3 d-flex flex-column align-items-center text-center rounded">
           <Image src={steel} alt="Course Logo" width="200px" className="mb-2" />

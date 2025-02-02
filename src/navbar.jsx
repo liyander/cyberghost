@@ -8,7 +8,7 @@ const Defaultnavbar = () => {
     <Navbar expand="lg" className="body" >
       
         <Navbar.Brand href="#home" className='logo' style={{color:"white"}}>Cyberghost</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor:"white",border:"none"}} />
         <Navbar.Collapse id="basic-navbar-nav">
         <Container>
           <Nav className="me-auto">

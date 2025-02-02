@@ -18,9 +18,9 @@ const Project = () => {
         <Defaultnavbar/>
         <Container className='pro'>
           <h1 className='prohead'>Projects</h1>
-        <Row>
+        <Row className='row2'>
         <Col>
-        <Card border="primary" style={{ width: '25rem' }}>
+        <Card border="primary" className='new' >
         <Card.Header>MERN stack</Card.Header>
         <Card.Img variant="top" src={hedone} />
       <Card.Body>
@@ -33,7 +33,7 @@ const Project = () => {
       </Card>
         </Col>
         <Col>
-        <Card border="primary" style={{ width: '25rem' }}>
+        <Card border="primary" className='new' >
         <Card.Header>LAMP stack</Card.Header>
         <Card.Img variant="top" src={sms} />
       <Card.Body>
@@ -46,7 +46,7 @@ const Project = () => {
       </Card>
         </Col>
         <Col>
-        <Card border="primary" style={{ width: '25rem' }}>
+        <Card border="primary" className='new' >
         <Card.Header>Python</Card.Header>
         <Card.Img variant="top" src={malware} />
       <Card.Body>
@@ -61,7 +61,7 @@ const Project = () => {
       </Row>
       <Row className='row2'>
         <Col>
-        <Card border="primary" style={{ width: '25rem' }}>
+        <Card border="primary" className='new' >
         <Card.Header>Bash</Card.Header>
         <Card.Img variant="top" src={cis} />
       <Card.Body>
@@ -74,7 +74,7 @@ const Project = () => {
       </Card>
         </Col>
         <Col>
-        <Card border="primary" style={{ width: '25rem' }}>
+        <Card border="primary" className='new'>
         <Card.Header>Python</Card.Header>
         <Card.Img variant="top" src={tony}/>
       <Card.Body>
@@ -87,7 +87,7 @@ const Project = () => {
       </Card>
         </Col>
         <Col>
-        <Card border="primary" style={{ width: '25rem' }}>
+        <Card border="primary" className='new' >
         <Card.Header>LAMP stack</Card.Header>
         <Card.Img variant="top" src={bill} />
       <Card.Body>

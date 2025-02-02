@@ -12,42 +12,42 @@ const ErrorPage = () => {
             <Row>
                 <Col>
             <div className="back">
-                <img src={Back} alt="" width="800" />
+                <img className="backimg" src={Back} alt=""  />
             </div>
                 </Col>
                 <Col>
                 <div className="four">
-                <h3 style={{fontFamily:"'Press Start 2P', monospace",color:"red", fontSize:"100px"}}>404</h3>
+                <h3 className="zero" style={{fontFamily:"'Press Start 2P', monospace",color:"red"}}>404</h3>
                 </div>
                 </Col>
             </Row>
             <Row>
                 <Col>
             <div className="mcfly">
-                <img src={Error} alt="404" width="700px" />
+                <img className="fournot" src={Error} alt="404" />
             </div>
                 </Col>
                 <Col>
                 <div className="notfound">
                 <Col>
                 <Row>
-                <h3 style={{fontFamily:"'Press Start 2P', monospace",color:"white", fontSize:"50px",width:"50px",paddingLeft:"210px"}}>PAGE</h3>
+                <h3 className="page" style={{fontFamily:"'Press Start 2P', monospace",color:"white"}}>PAGE</h3>
                 </Row>
                 <Row>
-                <h3 style={{fontFamily:"'Press Start 2P', monospace",color:"white", fontSize:"50px",width:"50px",paddingLeft:"240px"}}>NOT</h3>
+                <h3 className="not" style={{fontFamily:"'Press Start 2P', monospace",color:"white"}}>NOT</h3>
                 </Row>
                 <Row>
-                <h3 style={{fontFamily:"'Press Start 2P', monospace",color:"white", fontSize:"50px",width:"50px",paddingLeft:"190px"}}>FOUND</h3>
+                <h3 className="found"  style={{fontFamily:"'Press Start 2P', monospace",color:"white"}}>FOUND</h3>
                 </Row>
                 <Row>
-                <h3 style={{fontFamily:"'Press Start 2P', monospace",color:"white", fontSize:"20px",paddingLeft:"190px",paddingTop:"40px"}}>BACK TO HOME</h3>
+                <h3 className="home" style={{fontFamily:"'Press Start 2P', monospace",color:"white"}}>BACK TO HOME</h3>
                 </Row>
                 <Row>
                 <Col>
-                <Button onClick={() => window.location.href = '/'} style={{fontFamily:"'Press Start 2P', monospace",color:"white", fontSize:"15px",paddingLeft:"240px",paddingTop:"30px",background:"transparent",border:"none"}}>YES</Button>
+                <Button className="yes" onClick={() => window.location.href = '/'} style={{fontFamily:"'Press Start 2P', monospace",color:"white",background:"transparent",border:"none"}}>YES</Button>
                 </Col>
                 <Col>
-                <h3 style={{fontFamily:"'Press Start 2P', monospace",color:"white", fontSize:"15px",width:"50px",paddingLeft:"20px",paddingTop:"31.8px"}}>NO</h3>
+                <h3 className="no" style={{fontFamily:"'Press Start 2P', monospace",color:"white"}}>NO</h3>
                 </Col>
                 </Row>
                 </Col>

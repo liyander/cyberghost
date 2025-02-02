@@ -31,7 +31,7 @@ const Achieve = () => {
     <div className="breaking_bad"></div>
     <div className='contents'>
     <Container>
-        <h1>Cert    </h1>
+        <h1 style={{fontFamily:"'Press Start 2P', monospace"}} >Hall of Fame </h1>
     <div className="tryhackme" style={{paddingTop:"30px"}}>
         <h3 style={{fontFamily:"'Press Start 2P', monospace"}}>Tryhackme:</h3>
      <Row style={{paddingTop:"30px"}}>
@@ -70,9 +70,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Jr Penetration Tester</h5>
                 <p className="mb-2">Issed by: Tryhackme</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -112,9 +110,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Web Application Penetesting</h5>
                 <p className="mb-2">Issed by: Tryhackme</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -154,9 +150,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Web fundamentals</h5>
                 <p className="mb-2">Issed by: Tryhackme</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -198,9 +192,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Web fundamentals</h5>
                 <p className="mb-2">Issed by: Tryhackme</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -245,9 +237,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Practical Web Hacking</h5>
                 <p className="mb-2">Issed by: TCM-Security</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -287,9 +277,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Linux 101</h5>
                 <p className="mb-2">Issed by: TCM-Security</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -329,9 +317,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Practical API Hacking</h5>
                 <p className="mb-2">Issed by: TCM-Security</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -373,9 +359,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Programming with AI</h5>
                 <p className="mb-2">Issed by: TCM-Security</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -415,9 +399,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Programming with AI (mini course)</h5>
                 <p className="mb-2">Issed by: TCM-Security</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -457,9 +439,7 @@ const Achieve = () => {
                 <h5 className="mb-2">OSINT Fundamentals</h5>
                 <p className="mb-2">Issed by: TCM-Security</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -501,9 +481,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Linux Privilege Escalation For Beginners</h5>
                 <p className="mb-2">Issed by: TCM-Security</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -543,9 +521,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Python101</h5>
                 <p className="mb-2">Issed by: TCM-Security</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -585,9 +561,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Python 201</h5>
                 <p className="mb-2">Issed by: TCM-Security</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -629,9 +603,7 @@ const Achieve = () => {
                 <h5 className="mb-2">SOC 101</h5>
                 <p className="mb-2">Issed by: TCM-Security</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -676,9 +648,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Certified Appsec Practitioner</h5>
                 <p className="mb-2">Issed by: offsec</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -723,9 +693,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Hack The Box University CTF</h5>
                 <p className="mb-2">Issed by: Hack The Box</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -765,9 +733,7 @@ const Achieve = () => {
                 <h5 className="mb-2">Nahom CTF</h5>
                 <p className="mb-2">Issed by: Nahomcon</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
@@ -807,9 +773,7 @@ const Achieve = () => {
                 <h5 className="mb-2">OWSAP Hacker's Meetup</h5>
                 <p className="mb-2">Issed by: Owsap,hacker's meetup and Defcon</p>
                 <p></p>
-                <Button variant="light" onClick={{}}>
-                Watch Now
-                </Button>
+                
                 </div>
                 </div>
                 </Card>
