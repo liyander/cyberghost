@@ -2,6 +2,7 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import './home.css';
 import hedone from "./project/hedone.png";
 import bill from "./project/bill.png";
@@ -27,7 +28,7 @@ const Project = () => {
         <Card.Text>
         It is an online movie database based website developed with full stack.
         </Card.Text>
-        
+        <Button variant="outline-success" href="https://github.com/liyander/Hedone"  >Go somewhere</Button>
       </Card.Body>
       </Card>
         </Col>
@@ -40,7 +41,7 @@ const Project = () => {
         <Card.Text>
         A Web Application designed to help faculty and students manage various academic and administrative activities.
         </Card.Text>
-        
+        <Button variant="outline-success">Go somewhere</Button>
       </Card.Body>
       </Card>
         </Col>
@@ -68,7 +69,7 @@ const Project = () => {
         <Card.Text>
         Automated auditing scripts designed for both Linux and Windows environments.
         </Card.Text>
-        
+        <Button variant="outline-success">Go somewhere</Button>
       </Card.Body>
       </Card>
         </Col>
@@ -81,7 +82,7 @@ const Project = () => {
         <Card.Text>
         this is an automated ai voice assistant for desktop that can manage day to day aspects
         </Card.Text>
-        
+        <Button variant="outline-success">Go somewhere</Button>
       </Card.Body>
       </Card>
         </Col>
@@ -94,7 +95,7 @@ const Project = () => {
         <Card.Text>
         Web application to manage biiling and stock management in tiles shop
         </Card.Text>
-        
+        <Button variant="outline-success">Go somewhere</Button>
       </Card.Body>
       </Card>
         </Col>
