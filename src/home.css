@@ -263,7 +263,7 @@ body{
     .new{
       margin-bottom: 27px;
       width: 21rem;
-      margin-left: 0px;
+      margin-left: -5px;
       
     }
     .d-flex{
