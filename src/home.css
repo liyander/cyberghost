@@ -152,6 +152,9 @@ body{
   .new{
     width: 25rem;
   }
+  .last{
+    padding-bottom: 50px;
+  }
 
   
   
@@ -259,12 +262,19 @@ body{
 
     .new{
       margin-bottom: 27px;
-      width: 22rem;
+      width: 21rem;
+      margin-left: 4px;
+      
     }
     .d-flex{
       padding-bottom: 23px;
     }
-   
+    .small{
+      padding-right: 30px;
+    }
+    .mb-2{
+      width: 270px;
+    }
 
 
   }

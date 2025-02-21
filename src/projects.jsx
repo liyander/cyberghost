@@ -26,9 +26,9 @@ const Project = () => {
       <Card.Body>
         <Card.Title>Hedone</Card.Title>
         <Card.Text>
-        It is an online movie database based website developed with full stack.
+        It is an online movie and series database based website . This website is for seeing details about movies and series with recommandation and user reiviews developed with full stack.
         </Card.Text>
-        <Button variant="outline-success" href="https://github.com/liyander/Hedone"  >Go somewhere</Button>
+        <Button variant="outline-success" href="https://hedone-d5f2f.web.app"  >Go To The Site</Button>
       </Card.Body>
       </Card>
         </Col>
@@ -39,9 +39,9 @@ const Project = () => {
       <Card.Body>
         <Card.Title>SMS (student Managemnet System) </Card.Title>
         <Card.Text>
-        A Web Application designed to help faculty and students manage various academic and administrative activities.
+        A Web Application designed to help faculty and students manage various academic and administrative activities developed with full stack (lamp) stack.
         </Card.Text>
-        <Button variant="outline-success">Go somewhere</Button>
+        <Button variant="outline-success">See The Project</Button>
       </Card.Body>
       </Card>
         </Col>
@@ -52,9 +52,9 @@ const Project = () => {
       <Card.Body>
         <Card.Title>Automated-Malware-Analysis-Tool</Card.Title>
         <Card.Text>
-        This is python used to do automated static malware analysis.
+        This is an automated malware analysis tool help to automate the basic steps invloved in malware analysis including string extraction malicious link detection etc. Develop with python
         </Card.Text>
-        <Button variant="outline-success" href="https://github.com/liyander/Automated-Malware-Analysis-Tool" target="_blank" >Go somewhere</Button>
+        <Button variant="outline-success" href="https://github.com/liyander/Automated-Malware-Analysis-Tool" target="_blank" >See The Project</Button>
       </Card.Body>
       </Card>
         </Col>
@@ -67,9 +67,9 @@ const Project = () => {
       <Card.Body>
         <Card.Title>Automated CIS Benchmark Auditing</Card.Title>
         <Card.Text>
-        Automated auditing scripts designed for both Linux and Windows environments.
+        Automated auditing scripts designed to establish security hardening but auditing and configuring cis benchmarks for both Linux and Windows environments.
         </Card.Text>
-        <Button variant="outline-success">Go somewhere</Button>
+        <Button variant="outline-success">See The Project</Button>
       </Card.Body>
       </Card>
         </Col>
@@ -80,9 +80,9 @@ const Project = () => {
       <Card.Body>
         <Card.Title>Personal-Desktop-ai-assistant</Card.Title>
         <Card.Text>
-        this is an automated ai voice assistant for desktop that can manage day to day aspects
+        this is an automated ai voice assistant for desktop that can answer simple questions and also general knowledge questions and simple math automate daily task and also be your friend.
         </Card.Text>
-        <Button variant="outline-success">Go somewhere</Button>
+        <Button variant="outline-success" href="https://github.com/liyander/Personal-Desktop-ai-assistant" target="_blank" >See The Project</Button>
       </Card.Body>
       </Card>
         </Col>
@@ -93,9 +93,9 @@ const Project = () => {
       <Card.Body>
         <Card.Title>Billing Management Application</Card.Title>
         <Card.Text>
-        Web application to manage biiling and stock management in tiles shop
+        Web application to manage biiling and stock management . Created with LAMP Stack. Assist stores to manage billing and manage the billing records
         </Card.Text>
-        <Button variant="outline-success">Go somewhere</Button>
+        <Button variant="outline-success" href="https://github.com/quixel200/billing_management" >See The Project</Button>
       </Card.Body>
       </Card>
         </Col>
