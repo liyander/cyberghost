@@ -13,6 +13,7 @@ import cis from "./project/cis.png";
 import Defaultnavbar from './navbar';
 import blackops from "./project/blackops.png";
 import Bytes from "./project/Bytes.png";
+import Ghost from "./project/ghost.png";
 
 const Project = () => {
     return ( 
@@ -123,9 +124,22 @@ const Project = () => {
       <Card.Body>
         <Card.Title>CyberBytes</Card.Title>
         <Card.Text>
-        CyberBytes is a full-stack blog web application designed for users to create, read, and share blog posts easily. It integrates modern technologies and cloud services for a seamless user experience.
+        CyberBytes is a full-stack blog web application designed for users to create, read, and share blog posts easily.
         </Card.Text>
-        <Button variant="outline-success" href="https://github.com/liyander/Personal-Desktop-ai-assistant" target="_blank" >See The Project</Button>
+        <Button variant="outline-success" href="cyberbytes-c4wu.vercel.app" target="_blank" >See The Project</Button>
+      </Card.Body>
+      </Card>
+        </Col>
+        <Col>
+        <Card border="primary" className='new'>
+        <Card.Header>MERN</Card.Header>
+        <Card.Img variant="top" src={Ghost}/>
+      <Card.Body>
+        <Card.Title>CyberGhost - this portfolio</Card.Title>
+        <Card.Text>
+        This is my portfolio created for myself to explain about me.
+        </Card.Text>
+        <Button variant="outline-success" href="https://cyberghost-portfolio.web.app" target="_blank" >See The Project</Button>
       </Card.Body>
       </Card>
         </Col>
