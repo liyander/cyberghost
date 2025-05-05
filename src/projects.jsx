@@ -111,7 +111,7 @@ const Project = () => {
       <Card.Body>
         <Card.Title>BLACKOPS Field Vulnerability Exploiter</Card.Title>
         <Card.Text>
-        A Comprehensive Field Vulnerability Exploiter for Ethical Hacking and CTF Operations for today’s threat-driven landscape, precision, automation, and intelligence are essential for effective vulnerability management and red team operations. 
+        A Comprehensive Field Vulnerability Exploiter for Ethical Hacking and CTF Operations For today’s threat-driven landscape, precision, automation, and intelligence are essential for effective vulnerability management and red team operations. I’m excited to introduce BLACKOPS v2.0 — a tactical-grade field exploitation toolkit designed to streamline reconnaissance, vulnerability assessment, and exploitation for cybersecurity professionals and CTF enthusiasts.
         </Card.Text>
         <Button variant="outline-success" href='https://github.com/liyander/blackops-field-vulnerability-exploiter'>See The Project</Button>
       </Card.Body>
