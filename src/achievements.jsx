@@ -21,14 +21,21 @@ import cap from "./cert/CAP.jpg";
 //import nahom from "./cert/nahom.jpg";
 import forensics from "./cert/forensics.jpg";
 import hackquest from "./cert/hackquest.jpg"
+import ADAPI from "./cert/ADAPI.jpg";
+import CNSP from "./cert/CNSP.jpg";
+import CTI from "./cert/CTI.jpg";
+import ExploitX from "./cert/exploitX.jpg";
 
 
 const certifications = [
   { icon: "🐍", title: "Python 101 & Python 201", desc: "Mastering Python Fundamentals From TCM Security", link: python201 },
+  { icon: "🛡️", title: "Cyber Threat Intelligence", desc: "CTI Certification Rrom ArcX", link: CTI },
+  { icon: "🌐", title: "Certified Network Security Practitioner", desc: "CNSP Certification From Secops", link: CNSP },
   { icon: "🔍", title: "OSINT Fundamentals", desc: "Advanced Open-Source Intelligence From TCM Security", link: osint  },
   { icon: "🐧", title: "Linux Privilege Escalation", desc: "Mastering Prevesc From TCM Security Certification", link: prevesc },
   { icon: "⚡", title: "Security Operation Center 101", desc: "Security Operations Center Basics From TCM Security", link: soc },
   { icon: "🛡️", title: "External Pentesting", desc: "Mastering Pentesting From TCM Security",link: external },
+  { icon: "🔗", title: "API Penetration Testing", desc: "API Penetration Testing (12 hours) from APISEC University", link: ADAPI },
   { icon: "💻", title: "Practical API Hacking", desc: "Hands-on API security From TCM Security",link: api },
   { icon: "🌐", title: "Practical Web Hacking", desc: "Advanced Web Vulnerability Testing From TCM Security",link:webhack },
   { icon: "🐧", title: "Linux 101", desc: "Introduction to Linux Systems From Linux 101",link: linux101 },
@@ -39,7 +46,8 @@ const certifications = [
   { icon: "🌍", title: "Web Application PenTesting", desc: "Mastering Pentesting From TryHackMe Certification", link: webpen },
   { icon: "🤖", title: "Programming with AI", desc: "Understanding AI-driven development", link: ai },
   { icon: "🤝", title: "OWASP Hackers Meetup", desc: "Networking and Learning with Security Experts", link: owsap },
-  { icon: "🏆", title: "HackQuest CTF", desc: "Second Runner Up Of CyberHeals Capture The Flag Competition", link:hackquest},
+  { icon: "🏆", title: "HackQuest CTF", desc: "Second Runner Up Of Nation-level CTF CyberHeals Capture The Flag Competition", link:hackquest},
+  { icon: "🏆", title: "HackQuest CTF", desc: "Winner Of International CTF Exploit-X", link:ExploitX},
   { icon: "🎄", title: "Advent of Cyber", desc: "TryHackMe's Cybersecurity Christmas Event", link: advent }
 ];
 
