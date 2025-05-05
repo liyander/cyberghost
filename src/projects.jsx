@@ -11,7 +11,7 @@ import malware from "./project/malware.png";
 import sms from "./project/sms.png";
 import cis from "./project/cis.png";
 import Defaultnavbar from './navbar';
-import blackops from "./project/blackops.jpg";
+import blackops from "./project/blackops.png";
 import Bytes from "./project/bytes.png";
 
 const Project = () => {
