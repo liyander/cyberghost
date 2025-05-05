@@ -14,9 +14,9 @@ const Dresume = () => {
                     <p><strong>Phone:</strong> +91 86101 64765</p>
                     <p><strong>Location:</strong> Nagercoil, Tamil Nadu</p>
                     <p>
-                        <a href="https://www.linkedin.com/in/liyanderrishwanth" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
-                        <a href="https://github.com/liyander" target="_blank" rel="noopener noreferrer"> GitHub</a> |
-                        <a href="http://cyberghost-portfolio.web.app" target="_blank" rel="noopener noreferrer">Portfolio</a>
+                        <a href="https://www.linkedin.com/in/liyanderrishwanth" target="_blank">LinkedIn</a> |
+                        <a href="https://github.com/liyander" target="_blank" > GitHub</a> |
+                        <a href="http://cyberghost-portfolio.web.app" target="_blank" >Portfolio</a>
                     </p>
                 </header>
 
