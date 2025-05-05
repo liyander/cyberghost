@@ -1,3 +1,5 @@
+/* resume.css */
+
 .resume-container {
     width: 80%;
     margin: 40px auto;
@@ -73,4 +75,28 @@ ul li {
 
 .download-btn a:hover {
     background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .resume-container {
+        width: 90%;
+    }
+
+    .resume-header h1 {
+        font-size: 2rem;
+    }
+
+    .resume-header h2 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .download-btn a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
 }
