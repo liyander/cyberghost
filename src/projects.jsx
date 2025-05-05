@@ -12,7 +12,7 @@ import sms from "./project/sms.png";
 import cis from "./project/cis.png";
 import Defaultnavbar from './navbar';
 import blackops from "./project/blackops.png";
-import Bytes from "./project/bytes.png";
+import Bytes from "./project/Bytes.png";
 
 const Project = () => {
     return ( 
