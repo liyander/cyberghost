@@ -11,6 +11,8 @@ import malware from "./project/malware.png";
 import sms from "./project/sms.png";
 import cis from "./project/cis.png";
 import Defaultnavbar from './navbar';
+import blackops from "./project/blackops.jpg";
+import Bytes from "./project/bytes.png";
 
 const Project = () => {
     return ( 
@@ -96,6 +98,34 @@ const Project = () => {
         Web application to manage biiling and stock management . Created with LAMP Stack. Assist stores to manage billing and manage the billing records
         </Card.Text>
         <Button variant="outline-success" href="https://github.com/quixel200/billing_management" >See The Project</Button>
+      </Card.Body>
+      </Card>
+        </Col>
+      </Row>
+      <Row className='row2'>
+        <Col>
+        <Card border="primary" className='new' >
+        <Card.Header>Python</Card.Header>
+        <Card.Img variant="top" src={blackops} />
+      <Card.Body>
+        <Card.Title>BLACKOPS Field Vulnerability Exploiter</Card.Title>
+        <Card.Text>
+        A Comprehensive Field Vulnerability Exploiter for Ethical Hacking and CTF Operations
+        </Card.Text>
+        <Button variant="outline-success" href='https://github.com/liyander/blackops-field-vulnerability-exploiter'>See The Project</Button>
+      </Card.Body>
+      </Card>
+        </Col>
+        <Col>
+        <Card border="primary" className='new'>
+        <Card.Header>MERN</Card.Header>
+        <Card.Img variant="top" src={Bytes}/>
+      <Card.Body>
+        <Card.Title>CyberBytes</Card.Title>
+        <Card.Text>
+        CyberBytes is a full-stack blog web application designed for users to create, read, and share blog posts easily. It integrates modern technologies and cloud services for a seamless user experience.
+        </Card.Text>
+        <Button variant="outline-success" href="https://github.com/liyander/Personal-Desktop-ai-assistant" target="_blank" >See The Project</Button>
       </Card.Body>
       </Card>
         </Col>

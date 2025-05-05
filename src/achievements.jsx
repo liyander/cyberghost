@@ -25,6 +25,7 @@ import ADAPI from "./cert/ADAPI.jpg";
 import CNSP from "./cert/CNSP.jpg";
 import CTI from "./cert/CTI.jpg";
 import ExploitX from "./cert/exploitX.jpg";
+import CYAPO from "./cert/CYAPO.jpg";
 
 
 const certifications = [
@@ -47,8 +48,9 @@ const certifications = [
   { icon: "🤖", title: "Programming with AI", desc: "Understanding AI-driven development", link: ai },
   { icon: "🤝", title: "OWASP Hackers Meetup", desc: "Networking and Learning with Security Experts", link: owsap },
   { icon: "🏆", title: "HackQuest CTF", desc: "Second Runner Up Of Nation-level CTF CyberHeals Capture The Flag Competition", link:hackquest},
-  { icon: "🏆", title: "HackQuest CTF", desc: "Winner Of International CTF Exploit-X", link:ExploitX},
-  { icon: "🎄", title: "Advent of Cyber", desc: "TryHackMe's Cybersecurity Christmas Event", link: advent }
+  { icon: "🏆", title: "Exploit-X CTF", desc: "Winner Of International CTF Exploit-X", link:ExploitX},
+  { icon: "🎄", title: "Advent of Cyber", desc: "TryHackMe's Cybersecurity Christmas Event", link: advent },
+  { icon: "🧩", title: "Cyber Apocalypse CTF 2025", desc: "Ranked 511th among 8130 teams in Cyber Apocalypse CTF 2025 - Tales from Eldoria", link: CYAPO },
 ];
 
 const openCertificate = (image) => {
