@@ -111,7 +111,7 @@ const Project = () => {
       <Card.Body>
         <Card.Title>BLACKOPS Field Vulnerability Exploiter</Card.Title>
         <Card.Text>
-        A Comprehensive Field Vulnerability Exploiter for Ethical Hacking and CTF Operations
+        A Comprehensive Field Vulnerability Exploiter for Ethical Hacking and CTF Operations for today’s threat-driven landscape, precision, automation, and intelligence are essential for effective vulnerability management and red team operations. 
         </Card.Text>
         <Button variant="outline-success" href='https://github.com/liyander/blackops-field-vulnerability-exploiter'>See The Project</Button>
       </Card.Body>
@@ -124,7 +124,8 @@ const Project = () => {
       <Card.Body>
         <Card.Title>CyberBytes</Card.Title>
         <Card.Text>
-        CyberBytes is a full-stack blog web application designed for users to create, read, and share blog posts easily.
+        CyberBytes is a full-stack blog web application designed for users to create, read, and share blog posts easily. It integrates modern technologies and cloud services for a seamless user experience.
+
         </Card.Text>
         <Button variant="outline-success" href="cyberbytes-c4wu.vercel.app" target="_blank" >See The Project</Button>
       </Card.Body>
@@ -137,7 +138,7 @@ const Project = () => {
       <Card.Body>
         <Card.Title>CyberGhost - this portfolio</Card.Title>
         <Card.Text>
-        This is my portfolio created for myself to explain about me.
+        This is my portfolio created for myself.This reflects the author's passion and growing expertise in ethical hacking and cyber defense, making it a solid demonstration of both technical knowledge and practical application.
         </Card.Text>
         <Button variant="outline-success" href="https://cyberghost-portfolio.web.app" target="_blank" >See The Project</Button>
       </Card.Body>
