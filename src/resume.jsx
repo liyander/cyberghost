@@ -14,9 +14,9 @@ const Dresume = () => {
                     <p><strong>Phone:</strong> +91 86101 64765</p>
                     <p><strong>Location:</strong> Nagercoil, Tamil Nadu</p>
                     <p>
-                        <a href="https://www.linkedin.com/in/liyanderrishwanth" target="_blank">LinkedIn</a> |
-                        <a href="https://github.com/liyander" target="_blank" > GitHub</a> |
-                        <a href="http://cyberghost-portfolio.web.app" target="_blank" >Portfolio</a>
+                        <a href="https://www.linkedin.com/in/liyanderrishwanth" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+                        <a href="https://github.com/liyander" target="_blank" rel="noopener noreferrer"> GitHub</a> |
+                        <a href="http://cyberghost-portfolio.web.app" target="_blank" rel="noopener noreferrer">Portfolio</a>
                     </p>
                 </header>
 
@@ -69,7 +69,7 @@ const Dresume = () => {
                 <section>
                     <h2>Projects</h2>
                     <ul>
-                        <li><strong>Hedone:</strong> MERN stack movie discovery platform. [<a href="http://hedone-d5f2f.web.app" target="_blank">Visit</a>]</li>
+                        <li><strong>Hedone:</strong> MERN stack movie discovery platform. [<a href="http://hedone-d5f2f.web.app" target="_blank" rel="noopener noreferrer">Visit</a>]</li>
                         <li><strong>Insight-AI:</strong> AI-powered news verification site. (In development)</li>
                         <li><strong>Student Management System:</strong> Admin tool for academic records (PHP, MySQL)</li>
                         <li><strong>Automated CIS Benchmark Tool:</strong> Security auditing for Linux & Windows (Bash, PowerShell, PyQt6)</li>
@@ -77,7 +77,7 @@ const Dresume = () => {
                         <li><strong>Automated Malware Analysis:</strong> Python + VirusTotal API for static analysis</li>
                         <li><strong>Personal AI Desktop Assistant:</strong> Python assistant with APIs (Google, YouTube, Wikipedia, etc.)</li>
                         <li><strong>Billing Management:</strong> Warehouse stock/billing system (LAMP stack)</li>
-                        <li><strong>CyberBytes:</strong> Full-stack blog application [<a href="https://cyberbytes-c4wu.vercel.app" target="_blank">Visit</a>]</li>
+                        <li><strong>CyberBytes:</strong> Full-stack blog application [<a href="https://cyberbytes-c4wu.vercel.app" target="_blank" rel="noopener noreferrer">Visit</a>]</li>
                         <li><strong>BLACKOPS Exploiter:</strong> Python toolkit for CTF and real-world field exploitation</li>
                     </ul>
                 </section>
