@@ -28,7 +28,7 @@ import mongo from "./cert/mongodb.jpg";
 import WebDeveloper from "./cert/Webdeveloper.jpg";
 import azure from "./cert/azure.jpg";
 
-const temp = "https://www.codedex.io/images/sql/sqlbanner.gif"
+// const temp = "https://www.codedex.io/images/sql/sqlbanner.gif"
 
 const certData = [
   { img: python201, title: "Python 101 & 201", desc: "TCM Security", icon: "🐍", src: "https://www.codedex.io/images/python/python-animated.gif",level:"Intermediate" },
