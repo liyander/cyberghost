@@ -12,8 +12,8 @@ const Home = () => {
 
   useEffect(() => {
     setTimeout(() => setBackground(true), 500);
-    setTimeout(() => setShowNavbar(true), 1500); 
-    setTimeout(() => setShowSideContent(true), 2500);
+    setTimeout(() => setShowNavbar(true), 1000); 
+    setTimeout(() => setShowSideContent(true), 1500);
    
   }, []);
     return ( <>

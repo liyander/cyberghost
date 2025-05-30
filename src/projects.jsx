@@ -29,7 +29,7 @@ const Project = () => {
       <Card.Body>
         <Card.Title>Hedone</Card.Title>
         <Card.Text>
-        It is an online movie and series database based website . This website is for seeing details about movies and series with recommandation and user reiviews developed with full stack.
+        It is an online movie and series Streaming Website . This website is for seeing details about movies and series with recommandation and user reviews and also can bingwatch for free, developed with full stack.
         </Card.Text>
         <Button variant="outline-success" href="https://hedone-d5f2f.web.app"  >Go To The Site</Button>
       </Card.Body>

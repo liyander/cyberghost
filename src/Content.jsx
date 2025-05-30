@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './home.css';
+import TypingEffect from './TypingEffect'; 
 
 
 const Sidecontent = () => {
@@ -13,7 +14,13 @@ const Sidecontent = () => {
           <h5 className='hacker'>
             Hello earth
           </h5>
-          <h1 className='typing' style={{color:"white"}}>whoami </h1>
+          <h1 className='leo' style={{color:"white", display: "inline-block"}}>
+  whoami <TypingEffect className='typing' />
+</h1>
+
+          <div style={{marginTop: "10px", marginBottom: "10px"}}>
+            
+          </div>
         </Col>
        
       </Row>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Cards</title>
+  <style>
+    body {
+      background-color: #0e0e1a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      color: white;
+    }
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .filters button {
+      background-color: #1e1e2f;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 0.5rem 1.2rem;
+      cursor: pointer;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: #151526;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card .content {
+      padding: 1rem;
+    }
+    .card .title {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    .card .badge {
+      background-color: #a86d00;
+      color: white;
+      border-radius: 10px;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.75rem;
+      margin-left: 0.5rem;
+    }
+    .card .level {
+      margin-top: 0.5rem;
+      display: inline-block;
+      background-color: #2d2d4a;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="filters">
+    <button>Python</button>
+    <button>Web Development</button>
+    <button>Data Science</button>
+    <button>Tools</button>
+    <button>Creative Coding</button>
+    <button>Beginner</button>
+    <button>Intermediate</button>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <img src="https://cdn.wallpapersafari.com/26/68/CK7JQZ.jpg" alt="DSA" />
+      <div class="content">
+        <div class="title">Data Structures & Algorithms <span class="badge">NEW!</span></div>
+        <p>Learn fundamental concepts for organizing, storing, and processing data in Python...</p>
+        <div class="level">INTERMEDIATE</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/mnt/data/3c1a57b0-b364-4b4c-b14d-1f286cf620fe.png" alt="Node.js" />
+      <div class="content">
+        <div class="title">Node.js <span class="badge">NEW!</span></div>
+        <p>Combine JavaScript with the power of Node.js—unleash your full-stack potential...</p>
+        <div class="level">INTERMEDIATE</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/mnt/data/3c1a57b0-b364-4b4c-b14d-1f286cf620fe.png" alt="Java" />
+      <div class="content">
+        <div class="title">Java <span class="badge">NEW!</span></div>
+        <p>Master Java by exploring object-oriented programming and essential data structure...</p>
+        <div class="level">BEGINNER</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/mnt/data/3c1a57b0-b364-4b4c-b14d-1f286cf620fe.png" alt="C++" />
+      <div class="content">
+        <div class="title">C++ <span class="badge">NEW!</span></div>
+        <p>Learn C++ and master object-oriented programming and data structures!</p>
+        <div class="level">BEGINNER</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/mnt/data/3c1a57b0-b364-4b4c-b14d-1f286cf620fe.png" alt="Python" />
+      <div class="content">
+        <div class="title">Python</div>
+        <p>Learn programming fundamentals such as variables, control flow, and loops with the...</p>
+        <div class="level">BEGINNER</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="/mnt/data/3c1a57b0-b364-4b4c-b14d-1f286cf620fe.png" alt="HTML" />
+      <div class="content">
+        <div class="title">HTML</div>
+        <p>Create your first website with HTML, the building blocks of the web and dive into th...</p>
+        <div class="level">BEGINNER</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
