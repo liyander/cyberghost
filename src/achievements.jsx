@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./certifications.css";
 import Defaultnavbar from "./navbar";
 import junior from "./cert/jr.jpg";
@@ -64,31 +64,57 @@ const openCertificate = (image) => {
   newTab.document.write(`<img src="${image}" style="width:100%; height:auto;" />`);
 };
 
+// Glass skeleton loader for certificate cards
+const CertSkeleton = () => (
+  <div className="cert-card-modern skeleton">
+    <div className="cert-card-img-wrap skeleton-img" />
+    <div className="cert-card-body">
+      <span className="cert-card-category skeleton-text" />
+      <h3 className="cert-card-title skeleton-text" />
+      <p className="cert-card-desc skeleton-text" />
+    </div>
+    <div className="cert-card-footer">
+      <span className="cert-card-pill skeleton-pill" />
+      <span className="cert-card-btn skeleton-btn" />
+    </div>
+  </div>
+);
+
 const CertificationsPlain = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading delay (e.g., fetching images)
+    const timer = setTimeout(() => setLoading(false), 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <Defaultnavbar />
       <div className="certifications">
         <h2 style={{ color: "#fff", textAlign: "center", marginBottom: "2rem" }}>📜 C3rtificati0ns 0wned</h2>
         <div className="cert-grid">
-          {certData.map((cert, index) => (
-            <div className="cert-card-modern" key={index}>
-              <div className="cert-card-img-wrap">
-                <img src={cert.src} alt={cert.title} className="cert-card-img" />
-              </div>
-              <div className="cert-card-body">
-                <span className="cert-card-category">CERTIFICATE</span>
-                <h3 className="cert-card-title">{cert.icon} {cert.title}</h3>
-                <p className="cert-card-desc">{cert.desc}</p>
-              </div>
-              <div className="cert-card-footer">
-                <span className="cert-card-pill">{cert.level}</span>
-                <button className="cert-card-btn" onClick={() => openCertificate(cert.img)}>
-                  View Certificate →
-                </button>
-              </div>
-            </div>
-          ))}
+          {loading
+            ? Array.from({ length: 8 }).map((_, i) => <CertSkeleton key={i} />)
+            : certData.map((cert, index) => (
+                <div className="cert-card-modern" key={index}>
+                  <div className="cert-card-img-wrap">
+                    <img src={cert.src} alt={cert.title} className="cert-card-img" loading="lazy" />
+                  </div>
+                  <div className="cert-card-body">
+                    <span className="cert-card-category">CERTIFICATE</span>
+                    <h3 className="cert-card-title">{cert.icon} {cert.title}</h3>
+                    <p className="cert-card-desc">{cert.desc}</p>
+                  </div>
+                  <div className="cert-card-footer">
+                    <span className="cert-card-pill">{cert.level}</span>
+                    <button className="cert-card-btn" onClick={() => openCertificate(cert.img)}>
+                      View Certificate →
+                    </button>
+                  </div>
+                </div>
+              ))}
         </div>
       </div>
     </>

@@ -120,3 +120,40 @@
 .cert-card-btn:hover {
   background: #5bb8e6;
 }
+
+/* Glass skeleton loader styles */
+.skeleton {
+  background: rgba(36, 41, 61, 0.55);
+  box-shadow: 0 8px 32px 0 #000a;
+  border-radius: 22px;
+  animation: skeleton-glow 1.2s infinite linear alternate;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 140px;
+  background: rgba(200, 220, 255, 0.10);
+  border-radius: 18px 18px 0 0;
+  margin-bottom: 1.2rem;
+}
+
+.skeleton-text,
+.skeleton-pill,
+.skeleton-btn {
+  display: block;
+  background: rgba(200, 220, 255, 0.13);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  min-height: 18px;
+  width: 80%;
+  animation: skeleton-glow 1.2s infinite linear alternate;
+}
+
+.skeleton-text { height: 22px; width: 70%; margin-bottom: 0.7rem; }
+.skeleton-pill { height: 20px; width: 60px; margin-bottom: 0; }
+.skeleton-btn { height: 36px; width: 120px; margin-bottom: 0; }
+
+@keyframes skeleton-glow {
+  0% { background-color: rgba(200,220,255,0.13); }
+  100% { background-color: rgba(127,215,255,0.18); }
+}
