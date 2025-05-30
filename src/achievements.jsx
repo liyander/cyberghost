@@ -64,13 +64,17 @@ const openCertificate = (image) => {
   newTab.document.write(`<img src="${image}" style="width:100%; height:auto;" />`);
 };
 
-// Glass skeleton loader for certificate cards
+
 const CertSkeleton = () => (
   <div className="cert-card-modern skeleton">
     <div className="cert-card-img-wrap skeleton-img" />
     <div className="cert-card-body">
       <span className="cert-card-category skeleton-text" />
-      <h3 className="cert-card-title skeleton-text" />
+      <h3 className="cert-card-title skeleton-text">
+        <span style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", clip: "rect(1px, 1px, 1px, 1px)" }}>
+          Loading certificate title
+        </span>
+      </h3>
       <p className="cert-card-desc skeleton-text" />
     </div>
     <div className="cert-card-footer">
@@ -84,7 +88,6 @@ const CertificationsPlain = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading delay (e.g., fetching images)
     const timer = setTimeout(() => setLoading(false), 1200);
     return () => clearTimeout(timer);
   }, []);
