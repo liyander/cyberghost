@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./cyber-theme.css";
 import Defaultnavbar from "./navbar";
-import pfp from "./cert/jr.jpg"; 
 import junior from "./cert/jr.jpg";
 import webpen from "./cert/webpen.jpg";
-import web from "./cert/web.jpg";
 import advent from "./cert/advent.jpg";
 import ai from "./cert/ai.jpg";
 import api from "./cert/apihacking.jpg";
@@ -24,10 +22,7 @@ import CTI from "./cert/CTI.jpg";
 import ExploitX from "./cert/exploitX.jpg";
 import CYAPO from "./cert/CYAPO.jpg";
 import Fullhouse from "./cert/FullHouse.jpg";
-import express from "./cert/express.jpg";
-import mongo from "./cert/mongodb.jpg";
-import WebDeveloper from "./cert/Webdeveloper.jpg";
-import azure from "./cert/azure.jpg";
+
 
 // Using existing data mapped to new logic
 const certData = [
