@@ -1,113 +1,223 @@
+import React from "react";
 import Defaultnavbar from "./navbar";
 import "./resume.css";
 import Liyander from "./liyander_new.pdf";
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaGlobe, FaDownload } from "react-icons/fa";
-import me from "./me.jpg"; 
+import { FaTerminal, FaDownload } from "react-icons/fa";
+import me from "./me.jpg";
+
 const Dresume = () => {
-    return (
-        <>
-            <Defaultnavbar />
-            <div className="resume-hero">
-                <div className="resume-avatar">
-                    <img
-                      src={me}
-                      alt="Deadpool Symbol"
-                      style={{
-                        width: "6.5rem",
-                        height: "6.5rem",
-                        borderRadius: "50%",
-                        border: "3px solid #23263a",
-                        boxShadow: "0 2px 12px #0007",
-                        objectFit: "cover",
-                        background: "#18191c"
-                      }}
-                    />
+  return (
+    <>
+      <Defaultnavbar />
+      <div className="crt-overlay"></div>
+      <div className="resume-container">
+        <div className="arcade-cabinet">
+          {/* Header */}
+          <header className="cabinet-header">
+            <div className="header-left">
+              <FaTerminal className="text-primary" style={{ fontSize: "1.5rem" }} />
+              <h2 className="header-title glow-text">PERSONNEL DOSSIER</h2>
+            </div>
+            <div className="header-nav">
+                <div className="auth-status">
+                  <p className="text-wireframe font-bold uppercase" style={{ fontSize: "10px" }}>Auth Status</p>
+                  <p className="text-primary font-mono" style={{ fontSize: "12px" }}>ENCRYPTED_SEC_V4</p>
                 </div>
-                <div>
-                    <h1 className="resume-name">Liyander Rishwanth L</h1>
-                    <h2 className="resume-title">Cyber Security Engineer & Full Stack Developer</h2>
-                    <div className="resume-contact">
-                        <span><FaEnvelope /> <a href="mailto:liyanderrishwanth18@gmail.com">liyanderrishwanth18@gmail.com</a></span>
-                        <span><FaPhone /> +91 86101 64765</span>
-                        <span><FaMapMarkerAlt /> Nagercoil, Tamil Nadu</span>
-                    </div>
-                    <div className="resume-social">
-                        <a href="https://www.linkedin.com/in/liyanderrishwanth" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-                        <a href="https://github.com/liyander" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                        <a href="http://cyberghost-portfolio.web.app" target="_blank" rel="noopener noreferrer"><FaGlobe /></a>
-                    </div>
-                    <a className="resume-download-btn" href={Liyander} download>
-                        <FaDownload style={{ marginRight: "8px" }} />
-                        Download Resume
-                    </a>
+                <div className="user-avatar-small">
+                  <img src={me} alt="Profile" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                 </div>
             </div>
+          </header>
 
-            <div className="resume-main">
-                <section className="resume-section">
-                    <h2>🌟 Aspiration</h2>
-                    <p>
-                        I am a dedicated cybersecurity and full-stack development professional. My skills include Java programming, OSINT, system security, and software development, backed by practical project experience and advanced security certifications. I am committed to meaningful work, continuous learning, and leveraging technology for positive impact.
-                    </p>
-                </section>
-
-                <section className="resume-section">
-                    <h2>🛠️ Skills</h2>
-                    <ul>
-                        <li>Java, MongoDB, MySQL, Express.js, Node.js, React.js</li>
-                        <li>Deployment: Firebase, Render, Vercel, Cloudinary</li>
-                        <li>Windows Forensics, Linux Admin, OSINT</li>
-                        <li>Malware Automation, Security Hardening, Custom Scripts</li>
-                        <li>Leadership, Teamwork, Problem-Solving</li>
-                    </ul>
-                </section>
-
-                <section className="resume-section">
-                    <h2>🎓 Education</h2>
-                    <p><strong>Sri Shakthi Institute of Engineering and Technology</strong></p>
-                    <p>B.Tech in Computer Science and Engineering (Cyber Security), Expected 2027</p>
-                </section>
-
-                <section className="resume-section">
-                    <h2>📜 Certifications</h2>
-                    <ul>
-                        <li>Python 101 & 201 (TCM Security)</li>
-                        <li>OSINT Fundamentals (TCM Security)</li>
-                        <li>Linux Privilege Escalation (TCM Security)</li>
-                        <li>SOC 101, External Pentesting (TCM Security)</li>
-                        <li>Practical Web Hacking, Practical API Hacking, Linux 101, Windows Forensics (TryHackMe)</li>
-                        <li>Junior Penetration Tester, Web Application Pentesting, Web Fundamentals (The SecOps Group)</li>
-                        <li>Certified AppSec Practitioner, Certified Network Security Practitioner (The SecOps Group)</li>
-                        <li>API Penetration Testing (APIsec University)</li>
-                        <li>Cyber Threat Intelligence 101 (ArcX)</li>
-                    </ul>
-                </section>
-
-                <section className="resume-section">
-                    <h2>🏆 Achievements</h2>
-                    <p>
-                        Winner of the international CTF competition Exploit-X and 2nd runner-up at HackQuest (national level). Ranked in the top 1% on TryHackMe. Placed in top 511 among 8130+ teams in Hack The Box: Cyber Apocalypse. Solved challenges on PortSwigger and picoCTF. Solved Fullhouse Pro labs from hackthebox which solved by only few hackers on the entire planet
-                    </p>
-                </section>
-
-                <section className="resume-section">
-                    <h2>💡 Projects</h2>
-                    <ul>
-                        <li><strong>Hedone:</strong> MERN stack movie discovery and Streaming platform. [<a href="http://hedone-d5f2f.web.app" target="_blank" rel="noopener noreferrer">Visit</a>]</li>
-                        <li><strong>Insight-AI:</strong> AI-powered news verification site. (In development)</li>
-                        <li><strong>Student Management System:</strong> Admin tool for academic records (PHP, MySQL)</li>
-                        <li><strong>Automated CIS Benchmark Tool:</strong> Security auditing for Linux & Windows (Bash, PowerShell, PyQt6)</li>
-                        <li><strong>Automated Linux Installation:</strong> Bash script for mass penetration tool deployment</li>
-                        <li><strong>Automated Malware Analysis:</strong> Python + VirusTotal API for static analysis</li>
-                        <li><strong>Personal AI Desktop Assistant:</strong> Python assistant with APIs (Google, YouTube, Wikipedia, etc.)</li>
-                        <li><strong>Billing Management:</strong> Warehouse stock/billing system (LAMP stack)</li>
-                        <li><strong>CyberBytes:</strong> Full-stack blog application [<a href="https://cyberbytes-c4wu.vercel.app" target="_blank" rel="noopener noreferrer">Visit</a>]</li>
-                        <li><strong>BLACKOPS Exploiter:</strong> Python toolkit for CTF and real-world field exploitation</li>
-                    </ul>
-                </section>
+          <div className="cabinet-body">
+            {/* Headline */}
+            <div className="resume-headline">
+              <div className="access-badge">Accessing Encrypted Data...</div>
+              <h1 className="main-title">
+                TECHNICAL SCHEMATIC: <span className="text-primary glow-text">SYSTEM_RESUME.EXE</span>
+              </h1>
+              <p className="sub-title">
+                Subject: LIYANDER RISHWANTH L // Clearance: LEVEL 5 // Specialization: CYBER DEFENSE & FULL STACK
+              </p>
             </div>
-        </>
-    );
+
+            {/* Stats Grid */}
+            <div className="stats-grid">
+              <div className="stat-card">
+                <p className="stat-label">UPTIME (EXP)</p>
+                <p className="stat-value">STUDENT</p>
+              </div>
+              <div className="stat-card">
+                <p className="stat-label">SUCCESS RATE</p>
+                <p className="stat-value">TOP 1%</p>
+              </div>
+              <div className="stat-card">
+                <p className="stat-label">SYSTEM CLEARANCE</p>
+                <p className="stat-value">ROOT</p>
+              </div>
+              <div className="stat-card">
+                <p className="stat-label">LATENCY</p>
+                <p className="stat-value">0.1 MS</p>
+              </div>
+            </div>
+
+            <div className="content-grid">
+              {/* Left Column: Mission History (Projects & Experience) */}
+              <div className="left-column">
+                <div className="section-header">
+                  <h2 className="section-title">MISSION HISTORY</h2>
+                  <div className="section-line"></div>
+                </div>
+
+                <div className="timeline-list">
+                  {/* Item 1 */}
+                  <div className="timeline-item">
+                    <div className="timeline-dot"></div>
+                    <div className="timeline-header">
+                      <h3 className="timeline-role">Hedone: Streaming Platform</h3>
+                      <span className="timeline-date">MERN STACK</span>
+                    </div>
+                    <p className="timeline-company">FULL STACK PROJECT</p>
+                    <ul className="timeline-desc">
+                      <li><span className="timeline-bullet"></span> Designed movie discovery and streaming platform using MERN stack.</li>
+                      <li><span className="timeline-bullet"></span> Implemented real-time data fetching and responsive UI.</li>
+                    </ul>
+                  </div>
+
+                  {/* Item 2 */}
+                  <div className="timeline-item">
+                    <div className="timeline-dot secondary"></div>
+                    <div className="timeline-header">
+                      <h3 className="timeline-role">CTF Competitor</h3>
+                      <span className="timeline-date">2023 - PRESENT</span>
+                    </div>
+                    <p className="timeline-company">HACKTHEBOX, TRYHACKME</p>
+                    <ul className="timeline-desc">
+                      <li><span className="timeline-bullet"></span> Winner of Exploit-X International CTF.</li>
+                      <li><span className="timeline-bullet"></span> Top 1% rank on TryHackMe.</li>
+                      <li><span className="timeline-bullet"></span> 2nd Runner-up at HackQuest (National).</li>
+                    </ul>
+                  </div>
+
+                  {/* Item 3 */}
+                  <div className="timeline-item">
+                    <div className="timeline-dot secondary"></div>
+                    <div className="timeline-header">
+                      <h3 className="timeline-role">Automated Security Tools</h3>
+                      <span className="timeline-date">PYTHON / BASH</span>
+                    </div>
+                    <p className="timeline-company">OPEN SOURCE</p>
+                    <ul className="timeline-desc">
+                      <li><span className="timeline-bullet"></span> Developed Automated CIS Benchmark Tool for Linux/Windows auditing.</li>
+                      <li><span className="timeline-bullet"></span> Created mass penetration testing deployment scripts.</li>
+                    </ul>
+                  </div>
+                </div>
+                
+                {/* Aspiration Section as a Mission Brief */}
+                 <div className="section-header" style={{ marginTop: '3rem' }}>
+                  <h2 className="section-title">MISSION BRIEF</h2>
+                  <div className="section-line"></div>
+                </div>
+                <p style={{ color: 'var(--text-dim)', lineHeight: '1.6' }}>
+                    Dedicated cybersecurity and full-stack development professional. 
+                    Skills include Java, OSINT, system security, and software development. 
+                    Committed to meaningful work and leveraging technology for positive impact.
+                </p>
+
+              </div>
+
+              {/* Right Column: Protocols (Education) & Specs (Skills) */}
+              <div className="right-column">
+                
+                {/* Education & Certs */}
+                <section style={{ marginBottom: "2.5rem" }}>
+                    <div className="section-header">
+                        <h2 className="section-title" style={{ fontSize: "1.25rem" }}>CORE PROTOCOLS</h2>
+                    </div>
+                    <div className="panel-box">
+                        <p className="panel-title">B.Tech CYBER SECURITY</p>
+                        <p className="panel-subtitle">Sri Shakthi Institute</p>
+                        <p className="panel-sub">EXPECTED 2027</p>
+                    </div>
+                    <div className="panel-box">
+                        <p className="panel-title">TCM SECURITY</p>
+                        <p className="panel-subtitle">Python 101/201, OSINT, Linux Prev Esc, SOC 101</p>
+                    </div>
+                    <div className="panel-box">
+                        <p className="panel-title">TRYHACKME / THE SECOPS GROUP</p>
+                        <p className="panel-subtitle">Web Hacking, API Hacking, Certified AppSec Practitioner</p>
+                    </div>
+                </section>
+
+                {/* Skills */}
+                <section>
+                    <div className="section-header">
+                        <h2 className="section-title" style={{ fontSize: "1.25rem" }}>SYSTEM SPECS</h2>
+                    </div>
+                    
+                    <div className="skill-bar-container">
+                        <div className="skill-info">
+                            <span>Development (Java, JS, React)</span>
+                            <span>90%</span>
+                        </div>
+                        <div className="skill-track">
+                            <div className="skill-progress" style={{ width: "90%" }}></div>
+                        </div>
+                    </div>
+
+                    <div className="skill-bar-container">
+                        <div className="skill-info">
+                            <span>Cyber Security (Pentest, OSINT)</span>
+                            <span>85%</span>
+                        </div>
+                        <div className="skill-track">
+                            <div className="skill-progress" style={{ width: "85%" }}></div>
+                        </div>
+                    </div>
+
+                    <div className="skill-bar-container">
+                        <div className="skill-info">
+                            <span>Databases (MySQL, Mongo)</span>
+                            <span>80%</span>
+                        </div>
+                        <div className="skill-track">
+                            <div className="skill-progress" style={{ width: "80%" }}></div>
+                        </div>
+                    </div>
+
+                     <div className="skill-bar-container">
+                        <div className="skill-info">
+                            <span>Scripting (Bash, Python)</span>
+                            <span>88%</span>
+                        </div>
+                        <div className="skill-track">
+                            <div className="skill-progress" style={{ width: "88%" }}></div>
+                        </div>
+                    </div>
+                </section>
+
+                <a className="cyber-btn" href={Liyander} download>
+                    <FaDownload style={{ marginRight: "8px" }} />
+                    DOWNLOAD INTEL (PDF)
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+          {/* Footer */}
+          <footer className="cyber-footer">
+            <div className="player-status">PLAYER 1: ONLINE</div>
+            <div className="footer-credits">
+                CPU_LOAD: 2.4% // MEM: 1024KB<br />
+                 2026 CYBERGHOST_SYSTEMS
+            </div>
+          </footer>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Dresume;

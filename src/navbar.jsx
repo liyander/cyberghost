@@ -1,26 +1,34 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
+import { useLocation } from 'react-router-dom';
+import './cyber-navbar.css'; 
 
 const Defaultnavbar = () => {
+  const location = useLocation();
+  const isHome = location.pathname === '/' || location.pathname === '/home';
+
   return (
-    <Navbar expand="lg" className="body" >
-      
-        <Navbar.Brand href="#home" className='logo' style={{color:"white"}}>Cyberghost</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" style={{backgroundColor:"white",border:"none"}} />
+    <Navbar 
+      expand="lg" 
+      className={`cyber-navbar ${isHome ? 'cyber-navbar-transparent' : ''}`} 
+      variant="dark"
+      style={isHome ? { position: 'absolute', width: '100%', zIndex: 10 } : {}}
+    >
+      <Container fluid>
+        <Navbar.Brand href="/home" className='logo'>CYBERGHOST_SYS</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-        <Container>
-          <Nav className="me-auto">
-            <Nav.Link href="/home" style={{color:"white"}}>Home</Nav.Link>
-            <Nav.Link href="/projects" style={{color:"white"}}>Projects</Nav.Link>
-            <Nav.Link href="/achievements" style={{color:"white"}}>Breakthroughs 0wned</Nav.Link>
-            <Nav.Link href="/resume" style={{color:"white"}}>Resume</Nav.Link>
-            <Nav.Link href="/writeups" style={{color:"white"}}>Writeups</Nav.Link>
+          <Nav className="ms-auto">
+            <Nav.Link href="/home">HOME</Nav.Link>
+            <Nav.Link href="/projects">PROJECTS</Nav.Link>
+            <Nav.Link href="/achievements">CERTS</Nav.Link>
+            <Nav.Link href="/resume">RESUME</Nav.Link>
+            <Nav.Link href="/ctf-wins">CTF WINS</Nav.Link>
+            <Nav.Link href="/writeups">WRITEUPS</Nav.Link>
           </Nav>
-            </Container>
         </Navbar.Collapse>
-      
+      </Container>
     </Navbar>
   );
 }
