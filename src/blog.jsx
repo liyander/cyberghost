@@ -31,7 +31,8 @@ const Writeups = () => {
               fontFamily: 'monospace',
               fontSize: '1.2rem'
           }}>
-              // SYSTEM_UPDATE_IN_PROGRESS...
+              {/* SYSTEM_UPDATE_IN_PROGRESS... */}
+              {'// SYSTEM_UPDATE_IN_PROGRESS...'}
           </p>
       </div>
     </>
