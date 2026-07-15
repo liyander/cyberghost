@@ -10,7 +10,7 @@
 @media(max-width:850px){.error-screen{padding-top:50px}.error-art{min-height:390px}.error-art-media{min-height:320px}.error-home-link{margin-left:0}.error-copy{padding-top:8px}}
 @media(max-width:520px){.error-art{min-height:330px}.error-art-media{min-height:260px}}
 
-/* Place the Home control immediately above the DeLorean roofline. */
-.error-art{min-height:520px}.error-home-link{position:absolute;z-index:5;top:29%;left:7%;margin:0;padding:8px 14px 8px 8px;border:1px solid #334038;background:#050706d9;backdrop-filter:blur(12px);box-shadow:0 12px 35px #0008}.error-home-link:after{content:'';position:absolute;left:18px;right:18px;bottom:-18px;height:18px;border-left:1px solid #65e6ff66}.error-home-link span{width:36px;height:36px}.error-home-link:hover{border-color:#65e6ff;box-shadow:0 0 28px #65e6ff22}
-@media(max-width:850px){.error-home-link{top:19%;left:5%;transform:scale(.9);transform-origin:left top}}
-@media(max-width:520px){.error-home-link{top:10%;left:3%;transform:scale(.78)}}
+/* Keep the Home control in the empty sky, with a guaranteed gap above the car. */
+.error-art{min-height:520px}.error-home-link{position:absolute;z-index:5;top:12%;left:8%;margin:0;padding:8px 14px 8px 8px;border:1px solid #334038;background:#050706e8;backdrop-filter:blur(12px);box-shadow:0 12px 35px #0008}.error-home-link:after{content:none}.error-home-link span{width:36px;height:36px}.error-home-link:hover{border-color:#65e6ff;box-shadow:0 0 28px #65e6ff22}
+@media(max-width:850px){.error-home-link{top:4%;left:5%;transform:scale(.9);transform-origin:left top}}
+@media(max-width:520px){.error-home-link{top:0;left:3%;transform:scale(.78)}}
