@@ -4,10 +4,11 @@ body{
   background-color: #1a1a1a;
 }
 .maincontainer{
-    height:730px;
+    min-height:100vh;
+    height:auto;
     background-image: url(hack.jpg);
     background-repeat: no-repeat;
-    background-position: 100px ;
+    background-position: 100px;
     background-color: #1a1a1a;
 }
 .body{
