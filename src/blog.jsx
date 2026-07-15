@@ -1,42 +1,10 @@
 import React from 'react';
 import Defaultnavbar from './navbar';
-import "./resume.css"; // Reuse the cyberpunk theme variables if possible, or we will just use inline styles
+import './site.css';
 
-const Writeups = () => {
-  return (
-    <>
-      <Defaultnavbar />
-      <div className="crt-overlay"></div>
-      <div style={{
-          height: '90vh',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          backgroundColor: '#0a0a05',
-          fontFamily: "'Space Grotesk', monospace",
-          color: '#ffffff'
-      }}>
-          <h1 className="glow-text" style={{ 
-              fontSize: '4rem', 
-              color: '#f9f906', 
-              textTransform: 'uppercase', 
-              letterSpacing: '0.2rem',
-              marginBottom: '1rem' 
-          }}>
-              Coming Soon
-          </h1>
-          <p style={{ 
-              color: '#6a6a2f', 
-              fontFamily: 'monospace',
-              fontSize: '1.2rem'
-          }}>
-              {/* SYSTEM_UPDATE_IN_PROGRESS... */}
-              {'// SYSTEM_UPDATE_IN_PROGRESS...'}
-          </p>
-      </div>
-    </>
-  );
+export default function Writeups(){
+ return <div className="page-wrap"><Defaultnavbar/><main className="page-main">
+   <header className="page-head"><span className="kicker">Field notes / disclosure stories</span><h1>Research,<br/>deconstructed.</h1></header>
+   <section className="notes-empty"><h2>Write-ups are being prepared for responsible publication.</h2><div><p>Upcoming notes will cover vulnerability research methodology, secure DevSecOps patterns, CTF lessons, and practical defensive takeaways—after disclosure windows and coordinated fixes are complete.</p><a className="button ghost" href="https://www.linkedin.com/in/liyanderrishwanth/recent-activity/all/" target="_blank" rel="noreferrer">Follow updates on LinkedIn ↗</a></div></section>
+ </main></div>
 }
-
-export default Writeups;
