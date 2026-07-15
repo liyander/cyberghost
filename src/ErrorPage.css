@@ -4,3 +4,8 @@
 /* Keep home navigation in a dedicated rail above the DeLorean artwork. */
 .error-screen{padding-top:96px}.error-home-link{position:absolute;z-index:6;top:26px;left:clamp(24px,6vw,90px);display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font:500 9px 'DM Mono';letter-spacing:.12em}.error-home-link span{width:42px;height:42px;border:1px solid #3b443e;border-radius:50%;display:grid;place-items:center;color:#65e6ff;transition:.25s}.error-home-link:hover span{background:#65e6ff;color:#071012;transform:translateX(-4px);box-shadow:0 0 25px #65e6ff55}.error-copy a{background:transparent;color:#fff;border:1px solid #343a36;transition:.25s}.error-copy a:hover{border-color:#65e6ff;color:#65e6ff;box-shadow:0 0 25px #65e6ff15}
 @media(max-width:850px){.error-screen{display:block;padding-top:108px}.error-home-link{top:24px}.error-copy{padding-top:8px}}
+
+/* Structural placement: navigation occupies its own row above the artwork. */
+.error-screen{padding-top:50px}.error-art{display:flex;flex-direction:column;align-items:stretch;min-height:590px}.error-art-media{position:relative;flex:1;min-height:520px;display:grid;place-items:center}.error-home-link{position:relative;top:auto;left:auto;align-self:flex-start;flex:0 0 auto;margin:0 0 18px 10px}.error-home-link b{font:500 9px 'DM Mono';letter-spacing:.12em}.error-art-media .error-machine{bottom:1%}
+@media(max-width:850px){.error-screen{padding-top:50px}.error-art{min-height:390px}.error-art-media{min-height:320px}.error-home-link{margin-left:0}.error-copy{padding-top:8px}}
+@media(max-width:520px){.error-art{min-height:330px}.error-art-media{min-height:260px}}
