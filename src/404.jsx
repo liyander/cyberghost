@@ -7,9 +7,9 @@ export default function ErrorPage(){return <main className="error-screen">
   <div className="error-lines"></div><div className="error-ghost">404</div>
   <section className="error-stage">
     <div className="error-art">
-      <div className="error-art-media"><img className="error-back" src={Back} alt="Retro time travel landscape"/><Link className="error-home-link" to="/home"><span>BACK</span><b>RETURN TO HOME</b></Link><img className="error-machine" src={Error} alt="Time machine"/></div>
+      <div className="error-art-media"><img className="error-back" src={Back} alt="Back to the homepage"/><img className="error-machine" src={Error} alt="Time machine"/></div>
     </div>
-    <div className="error-copy"><span>TEMPORAL ROUTE FAILURE / 404</span><h1>Lost in the<br/><em>wrong timeline.</em></h1><p>This route vanished somewhere between the request and the destination. Recalibrate the flux capacitor and try a known coordinate.</p><div><Link to="/projects">VIEW PROJECTS</Link></div></div>
+    <div className="error-copy"><span>TEMPORAL ROUTE FAILURE / 404</span><h1>Lost in the<br/><em>wrong timeline.</em></h1><p>This route vanished somewhere between the request and the destination. Recalibrate the flux capacitor and try a known coordinate.</p><div><Link className="error-primary-action" to="/home">RETURN HOME</Link><Link to="/projects">VIEW PROJECTS</Link></div></div>
   </section>
   <footer><span>FLUX CAPACITOR: ONLINE</span><span>DESTINATION LOCK: /HOME</span></footer>
 </main>}
