@@ -19,3 +19,8 @@
 .error-home-link{display:none}.error-art{min-height:680px}.error-art-media{height:min(680px,calc(100vh - 110px));min-height:560px;display:block}.error-back{position:absolute;z-index:1;top:0;left:8%;width:70%;height:auto;opacity:.72;filter:drop-shadow(0 0 24px #ff420044);mask-image:none}.error-machine{z-index:2;width:82%;left:8%;bottom:0}.error-copy .error-primary-action{background:#f4f6f2;color:#070908;border-color:#f4f6f2}.error-copy .error-primary-action:hover{background:#65e6ff;color:#071012;border-color:#65e6ff}
 @media(max-width:850px){.error-art{min-height:470px}.error-art-media{height:470px;min-height:470px}.error-back{width:55%;left:8%}.error-machine{width:68%;left:10%}}
 @media(max-width:520px){.error-art{min-height:330px}.error-art-media{height:330px;min-height:330px}.error-back{width:68%;left:5%}.error-machine{width:78%;left:7%}}
+
+/* Keep the title immediately above the car and visibly wider than it. */
+.error-art-media{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}.error-back{position:relative;top:auto;left:auto;width:100%;flex:0 0 auto}.error-machine{position:relative;left:auto;bottom:auto;width:82%;flex:0 0 auto}
+@media(max-width:850px){.error-art{min-height:500px}.error-art-media{height:500px;min-height:500px}.error-back{width:92%;left:auto}.error-machine{width:70%;left:auto}}
+@media(max-width:520px){.error-art{min-height:370px}.error-art-media{height:370px;min-height:370px}.error-back{width:94%;left:auto}.error-machine{width:78%;left:auto}}
