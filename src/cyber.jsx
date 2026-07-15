@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './terminal.css';
 
 const KaliTerminal = () => {
   const [messageIndex, setMessageIndex] = useState(0);
@@ -66,19 +67,32 @@ const KaliTerminal = () => {
     return () => clearInterval(timer);
   }, [messageIndex, navigate, bootMessages]);
 
+  useEffect(() => {
+    const handleKey = (event) => {
+      if (event.key === 'Enter') navigate('/home');
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [navigate]);
+
   const getMessageColor = (message) => {
     if (message.includes('[ ok ]')) return '#00ff00';
     if (message.includes('[info]')) return '#00ffff';
     return '#ffffff';
   };
 
+  const progress = Math.min(100, Math.round((messageIndex / bootMessages.length) * 100));
+
   return (
-    <div style={{ 
-      backgroundColor: '#000000',
-      minHeight: '100vh',
-      padding: '20px'
-    }}>
-      <div className="container-fluid p-0">
+    <div className="boot-screen">
+      <div className="boot-grid"></div>
+      <div className="boot-scanline"></div>
+      <header className="boot-hud">
+        <div><span className="boot-led"></span> CYBERGHOST BIOS <small>v4.26</small></div>
+        <button onClick={() => navigate('/home')}>SKIP BOOT [ENTER]</button>
+      </header>
+      <div className="boot-progress"><span style={{width: `${progress}%`}}></span></div>
+      <div className="container-fluid p-0 boot-terminal">
         <div className="row">
           <div className="col-12">
             {displayedMessages.map((message, index) => (
@@ -86,11 +100,11 @@ const KaliTerminal = () => {
                 key={index}
                 style={{
                   color: getMessageColor(message),
-                  fontFamily: 'monospace',
+                  fontFamily: "'DM Mono', monospace",
                   fontSize: '14px',
                   textAlign: 'left',
                   whiteSpace: 'pre-wrap',
-                  lineHeight: '1.2',
+                  lineHeight: '1.35',
                   margin: '0',
                   padding: '0'
                 }}
@@ -99,22 +113,12 @@ const KaliTerminal = () => {
               </div>
             ))}
             <span 
-              style={{
-                display: 'inline-block',
-                width: '8px',
-                height: '15px',
-                backgroundColor: '#ffffff',
-                animation: 'blink 1s step-end infinite'
-              }}
+              className="boot-cursor"
             />
           </div>
         </div>
       </div>
-      <style>{`
-        @keyframes blink {
-          50% { opacity: 0; }
-        }
-      `}</style>
+      <footer className="boot-footer"><span>MEMORY CHECK: OK</span><span>SECURE CHANNEL: ESTABLISHED</span><span>{progress}%</span></footer>
     </div>
   );
 };
