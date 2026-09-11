@@ -1,25 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from 'react';
+import Defaultnavbar from './navbar';
+import Sidecontent from './Content';
 import './home.css';
-import Defaultnavbar from "./navbar";
-import Sidecontent from "./Content";
+import './home-refresh.css';
 
-const Home = () => {
-    const [showBackground, setBackground] = useState(false);
-    const [showNavbar, setShowNavbar] = useState(false);
-    const [showSideContent, setShowSideContent] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => setBackground(true), 500);
-    setTimeout(() => setShowNavbar(true), 1000);
-    setTimeout(() => setShowSideContent(true), 1500);
-  }, []);
-    return ( <>
-    <div className={showBackground && "maincontainer"}>
-    {showNavbar && <Defaultnavbar />}
-    {showSideContent && <Sidecontent />}
-    </div>
-    </>
-     );
+export default function Home() {
+  return <div className="maincontainer home-page">
+    <a className="home-skip-link" href="#home-content">Skip to introduction</a>
+    <Defaultnavbar />
+    <Sidecontent />
+  </div>;
 }
-
-export default Home;

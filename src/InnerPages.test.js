@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { MemoryRouter } from 'react-router-dom';
 import Projects from './projects';
 import Achievements from './achievements';
+import Home from './home';
 
 global.IS_REACT_ACT_ENVIRONMENT = true;
 
@@ -76,4 +77,18 @@ test('choosing a navigation destination closes the menu and resets scroll', () =
   expect(menu.getAttribute('aria-expanded')).toBe('false');
   expect(container.querySelector('.studio-links a.active').textContent).toBe('About');
   expect(window.scrollTo).toHaveBeenLastCalledWith(0, 0);
+});
+
+test('home is immediately usable and its navigation restores focus on Escape', () => {
+  renderPage(Home);
+  expect(container.querySelector('#home-content h1').textContent).toBe('LiyanderRishwanth.');
+  expect(container.querySelector('.home-primary').getAttribute('href')).toBe('/projects');
+  const menu = container.querySelector('.menu-button');
+  act(() => menu.click());
+  expect(menu.getAttribute('aria-expanded')).toBe('true');
+  const link = container.querySelector('#home-navigation a');
+  link.focus();
+  act(() => link.dispatchEvent(new KeyboardEvent('keydown', {key: 'Escape', bubbles: true})));
+  expect(menu.getAttribute('aria-expanded')).toBe('false');
+  expect(document.activeElement).toBe(menu);
 });

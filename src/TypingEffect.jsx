@@ -31,8 +31,9 @@ const TypingEffect = () => {
 
   return (
     <span className="typing">
-      {displayed}
-      <span className="cursor">|</span>
+      <span className="typing-accessible">Security engineer and full-stack developer</span>
+      <span className="typing-animated" aria-hidden="true">{displayed}<span className="cursor">|</span></span>
+      <span className="typing-static" aria-hidden="true">Security engineer</span>
     </span>
   );
 }

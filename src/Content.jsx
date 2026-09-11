@@ -1,52 +1,27 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
+import TypingEffect from './TypingEffect';
 import './home.css';
-import TypingEffect from './TypingEffect'; 
 
-
-const Sidecontent = () => {
-    return ( 
-        <>
-         <Container className='whoami'>
-      <Row>
-        <Col xs={12} md={8}>
-          <h5 className='hacker'>
-            Hello earth
-          </h5>
-          <h1 className='leo' style={{color:"white", display: "inline-block"}}>
-  whoami <TypingEffect className='typing' />
-</h1>
-
-          <div style={{marginTop: "10px", marginBottom: "10px"}}>
-            
-          </div>
-        </Col>
-       
-      </Row>
-
-      <Row>
-        <Col xs={6} md={5}>
-          <p className='para'>I am a passionate cybersecurity enthusiast, 
-            full-stack developer, and OSINT practitioner 
-            with a strong foundation in ethical hacking, 
-            network security, and web application security. 
-            With expertise in Python, C, Java, and the MERN 
-            stack, he has worked on various projects, 
-            including malware analysis automation tools, 
-            AI-powered verification systems, and cybersecurity
-            auditing tools. A TryHackMe top 1% player, 
-            he has completed multiple TCM Security certifications, 
-            demonstrating his skills in penetration testing, 
-            incident response, and API security. Cyber Ghost is also 
-            a team leader, having led teams in the Smart India Hackathon,
-            and is dedicated to building innovative security solutions 
-            and automation tools.</p>
-        </Col>
-      </Row>
-    </Container>
-        </>
-     );
+export default function Sidecontent() {
+  return <Container as="main" id="home-content" tabIndex={-1} className="whoami">
+    <Row>
+      <Col xs={12} md={8}>
+        <p className="hacker"><span aria-hidden="true"/> Hello earth / Welcome to my corner of the internet</p>
+        <h1 className="leo">Liyander<br/><em>Rishwanth.</em></h1>
+        <div className="home-terminal"><span className="home-prompt" aria-hidden="true">&gt; whoami</span><TypingEffect /></div>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12} md={6} className="home-introduction">
+        <p className="home-lead">Curiosity is the starting point.<br/>Building a safer web is the goal.</p>
+        <p className="para">I'm a security engineer, full-stack developer, and OSINT practitioner. I explore how systems break, turn research into practical tools, and build security into the way software is made.</p>
+        <div className="home-actions"><Link className="home-primary" to="/projects">Explore my work <span aria-hidden="true">&nearr;</span></Link><Link className="home-secondary" to="/resume">More about me <span aria-hidden="true">&rarr;</span></Link></div>
+        <div className="home-expertise" aria-label="Areas of focus"><span>Cloud security</span><span>DevSecOps</span><span>Vulnerability research</span></div>
+      </Col>
+    </Row>
+    <div className="home-bottom"><span>SECURITY-MINDED. BUILDER AT HEART.</span><a href="mailto:liyanderrishwanth18@gmail.com"><i aria-hidden="true"/> Open to opportunities <span aria-hidden="true">&nearr;</span></a></div>
+  </Container>;
 }
- 
-export default Sidecontent;
