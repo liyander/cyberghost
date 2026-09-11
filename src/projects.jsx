@@ -1,6 +1,7 @@
+import EditorialHero from './EditorialHero';
 import InnerFooter from './InnerFooter';
 import React, { useState } from 'react';
-import Defaultnavbar from './navbar';
+import InnerNav from './InnerNav';
 import './site.css'; import './inner-pages.css';
 import blackops from './project/blackops.png';
 import helios from './project/helios.png';
@@ -19,10 +20,10 @@ const projects = [
   {title:'Malware Analysis Tool',tag:'PYTHON / AUTOMATION',image:malware,description:'Static-analysis automation for string extraction, suspicious URL detection, and repeatable first-pass malware triage.',link:'https://github.com/liyander/Automated-Malware-Analysis-Tool',status:'OPEN SOURCE'}
 ];
 
-export default function Projects(){const [filter, setFilter] = useState('All projects'); const visible = projects.filter(p => filter === 'All projects' || (filter === 'Open source' ? p.status === 'OPEN SOURCE' : ['ACTIVE LAB', '500 USERS'].includes(p.status))); return <div className="page-wrap projects-page"><a className="skip-link" href="#main-content">Skip to content</a><Defaultnavbar/><main id="main-content" tabIndex={-1} className="page-main">
-  <header className="page-head split-head"><div><span className="kicker">01 / SELECTED SYSTEMS</span><h1>Built to survive<br/><em>real threats.</em></h1></div><div className="head-aside"><p>Security platforms, offensive tooling, and training systems designed for measurable impact.</p><div className="mini-stats"><span><b>07</b> systems</span><span><b>100+</b> labs</span><span><b>500</b> users</span></div></div></header>
-  <div className="collection-toolbar"><div className="filter-list" aria-label="Filter projects">{['All projects', 'Open source', 'Learning & labs'].map(label => <button key={label} aria-pressed={filter === label} onClick={() => setFilter(label)}>{label}</button>)}</div><span className="collection-count" role="status">{visible.length} systems / selected work</span></div><section className="project-showcase" aria-label="Selected projects">{visible.map((p,i)=><article className={i===0?'project-tile featured':'project-tile'} key={p.title}>
-    <div className="project-visual" style={{backgroundImage:`linear-gradient(140deg,transparent 20%,#070908 100%),url(${p.image})`}}><span>{String(projects.indexOf(p) + 1).padStart(2, '0')}</span><small>{p.status}</small></div>
-    <div className="project-copy"><p>{p.tag}</p><h2>{p.title}</h2><div><span>{p.description}</span><a href={p.link} target="_blank" rel="noreferrer" aria-label={`View ${p.title}`}>{String.fromCharCode(8599)}</a></div></div>
+export default function Projects(){const [filter, setFilter] = useState('All projects'); const visible = projects.filter(p => filter === 'All projects' || (filter === 'Open source' ? p.status === 'OPEN SOURCE' : ['ACTIVE LAB', '500 USERS'].includes(p.status))); return <div className="page-wrap projects-page"><a className="skip-link" href="#main-content">Skip to content</a><InnerNav/><main id="main-content" tabIndex={-1} className="page-main">
+  <EditorialHero number="01" label="SELECTED WORK / SECURITY ENGINEERING" title="Ideas into" accent="infrastructure" description="Tools, platforms, and experiments built at the intersection of security and software. Designed to solve problems beyond the lab."><span><b>07</b> selected systems</span><span><b>100+</b> training labs</span><span><b>500</b> learners</span></EditorialHero>
+  <div className="collection-toolbar"><div className="filter-list" aria-label="Filter projects">{['All projects', 'Open source', 'Learning & labs'].map(label => <button key={label} aria-pressed={filter === label} onClick={() => setFilter(label)}>{label}</button>)}</div><span className="collection-count" role="status">{visible.length} systems / selected work</span></div><section className="project-showcase" aria-label="Selected projects">{visible.map((p,i)=><article className={filter === 'All projects' && i===0?'project-tile featured':'project-tile'} key={p.title}>
+    <div className={`project-visual visual-${projects.indexOf(p) % 4}`}><div className="project-visual-top"><span>PROJECT / {String(projects.indexOf(p) + 1).padStart(2, '0')}</span><small>{p.status}</small></div><div className="project-screen"><div className="screen-chrome"><i/><i/><i/><span>{p.title.toLowerCase().replaceAll(' ', '-')}</span></div><img src={p.image} alt={`${p.title} project preview`} loading={i === 0 ? 'eager' : 'lazy'} decoding="async"/></div><span className="project-watermark" aria-hidden="true">{String(projects.indexOf(p) + 1).padStart(2, '0')}</span></div>
+    <div className="project-copy"><p>{p.tag}</p><h2>{p.title}</h2><div><span>{p.description}</span><a href={p.link} target="_blank" rel="noreferrer" aria-label={`View ${p.title}`}>Explore <span aria-hidden="true">&nearr;</span></a></div></div>
   </article>)}</section>
 </main><InnerFooter/></div>}

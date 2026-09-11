@@ -9,6 +9,7 @@ global.IS_REACT_ACT_ENVIRONMENT = true;
 let container;
 let root;
 beforeEach(() => {
+  window.scrollTo = jest.fn();
   container = document.createElement('div');
   document.body.appendChild(container);
   root = createRoot(container);
@@ -53,4 +54,26 @@ test('credential preview closes with Escape and restores focus and scrolling', (
   expect(container.querySelector('dialog')).toBeNull();
   expect(document.activeElement).toBe(trigger);
   expect(document.body.style.overflow).toBe('');
+});
+
+test('mobile navigation closes on Escape and restores focus to the menu button', () => {
+  renderPage(Projects);
+  const menu = container.querySelector('.studio-menu');
+  act(() => menu.click());
+  expect(menu.getAttribute('aria-expanded')).toBe('true');
+  const link = container.querySelector('.studio-links a');
+  link.focus();
+  act(() => link.dispatchEvent(new KeyboardEvent('keydown', {key: 'Escape', bubbles: true})));
+  expect(menu.getAttribute('aria-expanded')).toBe('false');
+  expect(document.activeElement).toBe(menu);
+});
+
+test('choosing a navigation destination closes the menu and resets scroll', () => {
+  renderPage(Projects);
+  const menu = container.querySelector('.studio-menu');
+  act(() => menu.click());
+  act(() => container.querySelector('.studio-links a[href="/resume"]').click());
+  expect(menu.getAttribute('aria-expanded')).toBe('false');
+  expect(container.querySelector('.studio-links a.active').textContent).toBe('About');
+  expect(window.scrollTo).toHaveBeenLastCalledWith(0, 0);
 });
