@@ -1,9 +1,10 @@
+import SiteNav from './SiteNav';
 import {Link} from 'react-router-dom';
 import Error from './error/404.png';
 import Back from './error/back.png';
 import './ErrorPage.css';
 
-export default function ErrorPage(){return <main className="error-screen">
+export default function ErrorPage(){return <><SiteNav/><main className="error-screen">
   <div className="error-lines"></div><div className="error-ghost">404</div>
   <section className="error-stage">
     
@@ -12,4 +13,4 @@ export default function ErrorPage(){return <main className="error-screen">
     <div className="error-copy"><span>TEMPORAL ROUTE FAILURE / 404</span><h1>Lost in the<br/><em>wrong timeline.</em></h1><p>This route vanished somewhere between the request and the destination. Recalibrate the flux capacitor and try a known coordinate.</p><div><Link className="error-primary-action" to="/home">RETURN HOME</Link><Link to="/projects">VIEW PROJECTS</Link></div></div>
   </section>
   <footer><span>FLUX CAPACITOR: ONLINE</span><span>DESTINATION LOCK: /HOME</span></footer>
-</main>}
+</main></>}

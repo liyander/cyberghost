@@ -8,10 +8,12 @@ import CtfWins from './ctf_wins';
 import Dresume from './resume';
 import Writeups from './blog';
 import ErrorPage from './404';
+import { ThemeProvider } from './ThemeProvider';
+import './themes.css';
 
 const App = () => {
   return (
-    <Router>
+    <ThemeProvider><Router>
       <Routes>
         <Route path="/" element={<KaliTerminal />} />
         <Route path="/home" element={<Home />} />
@@ -22,7 +24,7 @@ const App = () => {
         <Route path="/writeups" element={< Writeups/>} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </Router>
+    </Router></ThemeProvider>
   );
 };
 

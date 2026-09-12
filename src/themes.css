@@ -1,0 +1,83 @@
+﻿/* Theme overrides are route-scoped so the terminal entry is never recolored. */
+html[data-theme='light'] :is(.page-wrap, .portfolio-nav) { color-scheme: light; }
+html[data-theme='dark'] .page-wrap {
+  --bg: #10141c; --surface: #171e29; --surface-2: #212b3a;
+  --line: #303b4c; --muted: #aab6c8; --white: #edf0f6;
+  --ink: #edf0f6; --blue: #a7b8ff; --acid: #a7b8ff;
+  color-scheme: dark;
+  background: radial-gradient(ellipse at 90% 3%, #24365a42, transparent 40%), var(--bg);
+}
+/* Finishing details shared by both themes. */
+.page-wrap .project-tile.featured, .page-wrap .project-visual { border-radius: 14px; }
+.page-wrap .project-tile.featured .project-visual { border-radius: 14px 0 0 14px; }
+.page-wrap .credential-tile, .page-wrap .cve-grid article { border-radius: 12px; overflow: hidden; }
+.page-wrap .notes-feature { border-radius: 16px; }
+.page-wrap .education-card, .page-wrap .recognition { border-radius: 8px; }
+.page-wrap .resume-aside { border-radius: 14px; top: 116px; }
+.page-wrap .podium { border-radius: 14px; overflow: hidden; }
+.page-wrap .credential-modal { border-radius: 12px; }
+.page-wrap .credential-modal button { color: var(--bg); border: 0; border-radius: 6px; padding-inline: 18px; }
+.page-wrap .skill-chips span { border-radius: 5px; }
+.page-wrap .filter-list button { border-radius: 6px; }
+.page-wrap :is(.page-main, .resume-section) { scroll-margin-top: 116px; }
+.home-page #home-content { scroll-margin-top: 96px; }
+html[data-theme='dark'] .page-wrap .hero-art svg { opacity: .8; }
+html[data-theme='dark'] .page-wrap .motif-award .hero-art,
+html[data-theme='dark'] .page-wrap .motif-award .art-index { background: #202d39; }
+html[data-theme='dark'] .page-wrap .project-tile.featured { background: #1b2433; border: 1px solid var(--line); }
+html[data-theme='dark'] .page-wrap .project-visual { background: #263747; }
+html[data-theme='dark'] .page-wrap .project-visual.visual-1 { background: #293b36; }
+html[data-theme='dark'] .page-wrap .project-visual.visual-2 { background: #42353c; }
+html[data-theme='dark'] .page-wrap .project-visual.visual-3 { background: #33354b; }
+html[data-theme='dark'] .page-wrap .featured .project-visual { background: linear-gradient(135deg, #243453, #34476b); }
+html[data-theme='dark'] .page-wrap .project-visual-top { color: #d8e2f2; }
+html[data-theme='dark'] .page-wrap .project-visual-top small { background: #121e35a0; color: #e3eaff; border-color: #8199c34d; }
+html[data-theme='dark'] .page-wrap .project-watermark { color: #d4e1ff12; }
+html[data-theme='dark'] .page-wrap .credential-img { background: #24312e; }
+html[data-theme='dark'] .page-wrap .credential-tile:nth-child(3n + 2) .credential-img { background: #263247; }
+html[data-theme='dark'] .page-wrap .credential-img span { color: #d9e2f0; }
+html[data-theme='dark'] .page-wrap .credential-tile:hover { box-shadow: 0 12px 24px #0003; }
+html[data-theme='dark'] .page-wrap .podium article { background: #1c2833; }
+html[data-theme='dark'] .page-wrap .podium .podium-core { background: #3456cf; color: #fff; }
+html[data-theme='dark'] .page-wrap .award-board article:hover,
+html[data-theme='dark'] .page-wrap .notes-grid article:hover { background: #1c2737; }
+html[data-theme='dark'] .page-wrap .resume-aside { background: #1b2630; border: 1px solid #344252; }
+html[data-theme='dark'] .page-wrap .resume-numbers b { color: #f0f3f8; }
+html[data-theme='dark'] .page-wrap .resume-aside .kicker { color: #bacaf0; }
+html[data-theme='dark'] .page-wrap .recognition { background: #213051; }
+html[data-theme='dark'] .page-wrap .skill-chips span { background: #263447; color: #c8d6e9; }
+html[data-theme='dark'] .page-wrap .skill-chips span:hover { background: #a7b8ff; color: #121b32; }
+html[data-theme='dark'] .page-wrap .education-card { background: #22312f; }
+html[data-theme='dark'] .page-wrap .feature-cover { background: #2c439a; color: #f4f6ff; }
+html[data-theme='dark'] .page-wrap .inner-footer { background: #141e26; color: #edf0f6; border-top: 1px solid #303b4c; }
+html[data-theme='dark'] .page-wrap .footer-invitation { color: #edf0f6; }
+html[data-theme='dark'] .page-wrap .footer-invitation em,
+html[data-theme='dark'] .page-wrap .footer-invitation > span { color: #b8c8ff; }
+html[data-theme='dark'] .page-wrap .footer-topline,
+html[data-theme='dark'] .page-wrap .footer-bottom { color: #adbbce; }
+html[data-theme='dark'] .page-wrap .footer-bottom { border-color: #354252; }
+/* Photography stays original in either theme; only the UI over it changes. */
+html[data-theme='dark'] .home-page { color-scheme: dark; --home-accent: #b7c5ff; --home-line: #a9bbdf38; }
+html[data-theme='dark'] .home-page .home-expertise span { background: #192234b8; border-color: #6680a94a; color: #c8d4e9; }
+html[data-theme='dark'] .home-page .home-primary { background: #aebfff; color: #13213e; border-color: #aebfff; }
+html[data-theme='dark'] .home-page .home-primary:hover { background: #d0d9ff; }
+html[data-theme='light'] .home-page .home-primary { background: #f3f1ea; color: #20251f; border-color: #f3f1ea; }
+html[data-theme='light'] .home-page .home-primary:hover { background: #d9e0ff; }
+/* Keep the 404 artwork, text, links, and footer; theme their surroundings. */
+.error-screen { min-height: calc(100svh - 92px); }
+html[data-theme='dark'] .error-screen { background: #101722; color-scheme: dark; }
+html[data-theme='light'] .error-screen { --error-accent: #3456b7; --error-line: #ccd2df; background: #f0f1ed; color: #232c3a; color-scheme: light; }
+html[data-theme='light'] .error-screen::before { background: radial-gradient(ellipse at 22% 46%, #6980ce16, transparent 55%); }
+html[data-theme='light'] .error-screen .error-ghost { -webkit-text-stroke-color: #284b9c15; }
+html[data-theme='light'] .error-screen .error-back { filter: brightness(.23); }
+html[data-theme='light'] .error-screen .error-copy p { color: #536175; }
+html[data-theme='light'] .error-screen .error-copy > span { border-color: #7892c269; }
+html[data-theme='light'] .error-screen .error-copy a { color: #2d415d; border-color: #9cabc1; }
+html[data-theme='light'] .error-screen .error-copy .error-primary-action { background: #3456cf; border-color: #3456cf; color: #fff; }
+html[data-theme='light'] .error-screen .error-copy a:hover { background: #dce3f3; color: #213e73; }
+html[data-theme='light'] .error-screen .error-copy .error-primary-action:hover { background: #2645b4; color: #fff; }
+html[data-theme='light'] .error-screen footer { color: #56667d; }
+html[data-theme='light'] .error-screen footer > span:first-child::before { background: #43633c; }
+@media (max-width: 1100px) { .error-screen { min-height: calc(100svh - 80px); } }
+@media (max-width: 900px) { .page-wrap .project-tile.featured .project-visual { border-radius: 14px 14px 0 0; } }
+@media (prefers-reduced-motion: reduce) { .page-wrap *, .home-page *, .error-screen * { scroll-behavior: auto !important; } }
